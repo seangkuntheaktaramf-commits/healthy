@@ -16,7 +16,7 @@
 // 1. Storage Keys
 const STORAGE_KEYS = {
   THEME: 'mak_rachana_theme',
-  POSTS: 'mak_rachana_posts_v5',
+  POSTS: 'mak_rachana_posts_v6',
   COMMENTS: 'mak_rachana_comments_v1',
 };
 
@@ -35,8 +35,8 @@ const INITIAL_POSTS = [
     title: 'ម្ជូរគ្រឿងសាច់គោពិសេស រស់ជាតិដើម',
     category: 'soup',
     categories: ['soup', 'healthy'],
-    priceUsd: 1.25,
-    priceKhr: 5000,
+    priceUsd: 1.50,
+    priceKhr: 6000,
     calories: 310,
     desc: 'ម្ជូរគ្រឿងសាច់គោពិសេស រស់ជាតិដើម ឈ្ងុយឆ្ងាញ់ពិសេសប្រចាំ «ផ្ទះម៉ាក់រចនា» ចម្អិនតាមរូបមន្តខ្មែរបុរាណពិតៗ ជាមួយគ្រឿងផ្សំធម្មជាតិស្រស់ៗ និងអនាម័យខ្ពស់។',
     features: [
@@ -60,8 +60,8 @@ const INITIAL_POSTS = [
     title: 'ឆាខ្ញីសាច់មាន់ពិសេស — រសជាតិដើមដ៏ឈ្ងុយឆ្ងាញ់ ចម្អិនថ្មីៗក្តៅៗផ្ដល់ទាំងផាសុខភាព និងទំនុកចិត្តខ្ពស់',
     category: 'fried',
     categories: ['fried', 'healthy'],
-    priceUsd: 1.25,
-    priceKhr: 5000,
+    priceUsd: 1.50,
+    priceKhr: 6000,
     calories: 295,
     desc: 'ឆាខ្ញីសាច់មាន់ពិសេស រសជាតិដើមដ៏ឈ្ងុយឆ្ងាញ់ ចម្អិនថ្មីៗក្តៅៗផ្ដល់ទាំងផាសុខភាព និងទំនុកចិត្តខ្ពស់ប្រចាំ «ផ្ទះម៉ាក់រចនា»។',
     features: [
@@ -85,8 +85,8 @@ const INITIAL_POSTS = [
     title: 'ខសាច់ជ្រូកពងទាពិសេស — រសជាតិដើមឈ្ងុយឆ្ងាញ ចម្អិនរម្ងាស់យ៉ាងយកចិត្តទុកដាក់ ផ្តល់ទាំងឱជារស និងទំនុកចិត្តខ្ពស់',
     category: 'soup',
     categories: ['soup', 'healthy'],
-    priceUsd: 1.25,
-    priceKhr: 5000,
+    priceUsd: 1.50,
+    priceKhr: 6000,
     calories: 340,
     desc: 'ខសាច់ជ្រូកពងទាពិសេស រសជាតិដើមឈ្ងុយឆ្ងាញ ចម្អិនរម្ងាស់យ៉ាងយកចិត្តទុកដាក់ ផ្តល់ទាំងឱជារស និងទំនុកចិត្តខ្ពស់ប្រចាំ «ផ្ទះម៉ាក់រចនា»។',
     features: [
@@ -110,8 +110,8 @@ const INITIAL_POSTS = [
     title: 'សម្លកកូរខ្មែរពិសេស — កំពូលសម្លបុរាណប្រចាំជាតិ ប្រមូលផ្តុំដោយបន្លែធម្មជាតិ និងជីវជាតិយ៉ាងបរិបូរណ៍',
     category: 'healthy',
     categories: ['healthy', 'soup'],
-    priceUsd: 1.25,
-    priceKhr: 5000,
+    priceUsd: 1.50,
+    priceKhr: 6000,
     calories: 280,
     desc: 'សម្លកកូរខ្មែរពិសេស កំពូលសម្លបុរាណប្រចាំជាតិ ប្រមូលផ្តុំដោយបន្លែធម្មជាតិ និងជីវជាតិយ៉ាងបរិបូរណ៍ប្រចាំ «ផ្ទះម៉ាក់រចនា»។',
     features: [
@@ -134,8 +134,8 @@ const INITIAL_POSTS = [
     type: 'food',
     title: 'អាម៉ុកត្រីអន្លក់ខ្ចី (Fish Amok Khmer)',
     category: 'soup',
-    priceUsd: 5.50,
-    priceKhr: 22440,
+    priceUsd: 1.50,
+    priceKhr: 6000,
     calories: 320,
     desc: 'អាម៉ុកត្រីប្រពៃណីខ្មែរ ចម្អិនពីត្រីផ្ទក់ស្រស់ៗ គ្រឿងបុកស្លឹកក្រូចសើច រមៀត ខ្ទិះដូងឈ្ងុយឆ្ងាញ់ និងស្លឹកញរខ្ចី។ ផ្តល់សារធាតុប្រូតេអ៊ីនខ្ពស់ និងល្អចំពោះសុខភាពបេះដូង។',
     image: 'food_amok.jpg',
@@ -153,8 +153,8 @@ const INITIAL_POSTS = [
     type: 'food',
     title: 'សម្លកកូរខ្មែររសជាតិដើម (Samlor Korko)',
     category: 'healthy',
-    priceUsd: 4.50,
-    priceKhr: 18360,
+    priceUsd: 1.50,
+    priceKhr: 6000,
     calories: 260,
     desc: 'សម្លកកូរខ្មែរពោរពេញដោយបន្លែធម្មជាតិជាង ១០ មុខ រួមមានល្ហុង ចេកខ្ចី ស្លឹកបាស អង្គាដី និងសាច់ត្រីអាំង។ ជួយសម្រួលការរំលាយអាហារ និងសម្បូរជីវជាតិល្អសម្រាប់មនុស្សគ្រប់វ័យ។',
     image: 'food_korko.jpg',
@@ -171,8 +171,8 @@ const INITIAL_POSTS = [
     type: 'food',
     title: 'សម្លម្ជូរគ្រឿងសាច់គោត្រកួន (Sour Beef Soup)',
     category: 'soup',
-    priceUsd: 5.00,
-    priceKhr: 20400,
+    priceUsd: 1.50,
+    priceKhr: 6000,
     calories: 290,
     desc: 'សម្លម្ជូរគ្រឿងសាច់គោផុយស្រួយ បង់ត្រកួនស្រស់ ម្ជូរសណ្តាន់ និងគ្រឿងបុកក្រអូបឈ្ងុយ។ ជួយឱ្យឃ្លានបាយ បង្កើនថាមពល និងផ្តល់ជាតិដែកខ្ពស់។',
     image: 'food_sour_soup.jpg',
@@ -187,8 +187,8 @@ const INITIAL_POSTS = [
     type: 'food',
     title: 'ត្រីដំរីចៀនជូរអែម (Crispy Fried Fish Sweet & Sour)',
     category: 'fried',
-    priceUsd: 6.00,
-    priceKhr: 24480,
+    priceUsd: 1.50,
+    priceKhr: 6000,
     calories: 380,
     desc: 'ត្រីចៀនស្រួយក្តៅៗ ស្រោចទឹកត្រីជូរអែមអំពិលទុំ បន្ថែមខ្ញីខ្ចី និងម្ទេសប្លោក។ រសជាតិប្លែកមាត់ គ្មានក្លិនឆ្អាប និងមានអនាម័យខ្ពស់។',
     image: 'food_fried_fish.jpg',
@@ -203,8 +203,8 @@ const INITIAL_POSTS = [
     type: 'food',
     title: 'បាយឆាក្តាមគ្រឿងសមុទ្រ (Seafood Fried Rice)',
     category: 'stir',
-    priceUsd: 4.00,
-    priceKhr: 16320,
+    priceUsd: 1.50,
+    priceKhr: 6000,
     calories: 450,
     desc: 'បាយឆាក្តាម និងមឹកស្រស់ ចម្អិនជាមួយម្រេចកំពតក្រអូប គ្រាប់បាយទន់មិនជ្រាយ ឆ្ងាញ់ជាប់ចិត្ត។',
     image: 'food_bai_chhar.jpg',
@@ -219,8 +219,8 @@ const INITIAL_POSTS = [
     type: 'food',
     title: 'ប្រហុកខ្ទិះអន្លក់បន្លែស្រស់ (Prahok Ktiss Dip)',
     category: 'healthy',
-    priceUsd: 4.50,
-    priceKhr: 18360,
+    priceUsd: 1.50,
+    priceKhr: 6000,
     calories: 310,
     desc: 'ប្រហុកខ្ទិះសាច់ជ្រូកចិញ្ច្រាំឈ្ងុយខ្ទិះដូង ញ៉ាំផ្ទាប់ជាមួយបន្លែស្រស់ៗដូចជាត្រសក់ ត្រប់ ពេជ្រ និងផ្កាស្នោ។ ម្ហូបប្រចាំគ្រួសារខ្មែរ!',
     image: 'food_prahok_ktis.jpg',
@@ -418,6 +418,7 @@ const SPORTS_CARDS = [
 const AppState = {
   theme: localStorage.getItem(STORAGE_KEYS.THEME) || 'light',
   currentPage: 'pageHome',
+  isAdmin: true, // Page Owner / Administrator privilege
   posts: [],
   khrRate: 4080,
   activeCommentPostId: null,
@@ -433,7 +434,7 @@ function initApp() {
   if (savedPosts) {
     try {
       AppState.posts = JSON.parse(savedPosts);
-      // Ensure all 4 signature dishes (1.jpg, 2.jpg, 3.jpg, 4.jpg) are present at the beginning
+      // Ensure all signature and food dishes are updated to 6,000 Riels ($1.50)
       const signatureIds = ['food_korko_special', 'food_pork_egg_stew', 'food_ginger_chicken', 'food_beef_sour_soup'];
       for (const sigId of signatureIds) {
         const dish = INITIAL_POSTS.find(p => p.id === sigId);
@@ -445,6 +446,13 @@ function initApp() {
           AppState.posts.unshift(dish);
         }
       }
+      // Update any food posts with the new 6,000 Riels price
+      AppState.posts.forEach(p => {
+        if (p.type === 'food') {
+          p.priceKhr = 6000;
+          p.priceUsd = 1.50;
+        }
+      });
       savePosts();
     } catch (e) {
       AppState.posts = INITIAL_POSTS;
@@ -461,6 +469,7 @@ function initApp() {
   setupCurrencyConverter();
   setupPostInteractions();
   setupAdminPostFlow();
+  setupAdminPostControls();
 
   // Initial Renderings
   renderHomeFeed();
@@ -729,7 +738,7 @@ function buildPostCardHtml(post) {
       <div class="post-header-row">
         <div class="post-author-group">
           <div class="post-author-avatar-img">
-            <img src="mak_rachana_logo.jpg" alt="ផ្ទះម៉ាក់រចនា">
+            <img src="LGR1.jpg" alt="ផ្ទះម៉ាក់រចនា">
           </div>
           <div class="post-author-meta">
             <div class="post-author-name-row">
@@ -744,9 +753,19 @@ function buildPostCardHtml(post) {
           <span class="post-category-pill ${catPillClass}">
             ${catPillText}
           </span>
-          <button type="button" class="btn-post-more" data-post-more="${post.id}" title="ជម្រើសបន្ថែម">
-            <span>•••</span>
-          </button>
+          <div class="post-dots-dropdown-wrap">
+            <button type="button" class="btn-post-more" data-post-dots="${post.id}" title="ជម្រើសគ្រប់គ្រង (Admin តែប៉ុណ្ណោះ)">
+              <span>•••</span>
+            </button>
+            <div class="post-dropdown-menu" id="dropdown-${post.id}">
+              <button type="button" class="post-dropdown-item edit-price" data-admin-edit-price="${post.id}">
+                <span>✏️</span> កែតម្លៃ
+              </button>
+              <button type="button" class="post-dropdown-item delete-post" data-admin-delete-post="${post.id}">
+                <span>🗑️</span> លុប Post
+              </button>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -1227,3 +1246,159 @@ function savePosts() {
 
 // 15. DOM Ready Bootstrap
 document.addEventListener('DOMContentLoaded', initApp);
+
+
+// 12. Admin Post Controls (3-dots Dropdown, Edit Price, Delete Post - Admin Only)
+function setupAdminPostControls() {
+  // Delegate click for 3-dots toggle
+  document.addEventListener('click', (e) => {
+    // 1. Toggle 3-dots dropdown
+    const dotsBtn = e.target.closest('[data-post-dots]');
+    if (dotsBtn) {
+      e.stopPropagation();
+      if (!AppState.isAdmin) {
+        showToast('🔒 សញ្ញា ៣ ចុច និងមុខងារនេះគឺសម្រាប់តែ Admin (ម្ចាស់ហាង) តែប៉ុណ្ណោះ!', 'warn');
+        return;
+      }
+      const postId = dotsBtn.getAttribute('data-post-dots');
+      const menu = document.getElementById(`dropdown-${postId}`);
+      // Close other open menus
+      document.querySelectorAll('.post-dropdown-menu.active').forEach((m) => {
+        if (m !== menu) m.classList.remove('active');
+      });
+      if (menu) menu.classList.toggle('active');
+      return;
+    }
+
+    // Close any open dropdowns if clicking outside
+    if (!e.target.closest('.post-dots-dropdown-wrap')) {
+      document.querySelectorAll('.post-dropdown-menu.active').forEach((m) => m.classList.remove('active'));
+    }
+
+    // 2. Click Edit Price (កែតម្លៃ)
+    const editBtn = e.target.closest('[data-admin-edit-price]');
+    if (editBtn) {
+      e.stopPropagation();
+      document.querySelectorAll('.post-dropdown-menu.active').forEach((m) => m.classList.remove('active'));
+      
+      if (!AppState.isAdmin) {
+        showToast('🔒 មុខងារកែតម្លៃគឺសម្រាប់តែ Admin (ម្ចាស់ហាង) តែប៉ុណ្ណោះ!', 'warn');
+        return;
+      }
+
+      const postId = editBtn.getAttribute('data-admin-edit-price');
+      openAdminEditPriceModal(postId);
+      return;
+    }
+
+    // 3. Click Delete Post (លុប Post)
+    const delBtn = e.target.closest('[data-admin-delete-post]');
+    if (delBtn) {
+      e.stopPropagation();
+      document.querySelectorAll('.post-dropdown-menu.active').forEach((m) => m.classList.remove('active'));
+
+      if (!AppState.isAdmin) {
+        showToast('🔒 មុខងារលុប Post គឺសម្រាប់តែ Admin (ម្ចាស់ហាង) តែប៉ុណ្ណោះ!', 'warn');
+        return;
+      }
+
+      const postId = delBtn.getAttribute('data-admin-delete-post');
+      const post = AppState.posts.find((p) => p.id === postId);
+      if (!post) return;
+
+      const confirmMsg = `តើលោកអ្នក (Admin) ពិតជាចង់លុបការបង្ហោះ៖\n\n«${post.title}»\n\nនេះចេញពីប្រព័ន្ធមែនទេ?`;
+      if (window.confirm(confirmMsg)) {
+        AppState.posts = AppState.posts.filter((p) => p.id !== postId);
+        savePosts();
+        renderHomeFeed();
+        renderFoodGrid();
+        renderBeautyGrid();
+        showToast(`🗑️ បានលុបការបង្ហោះ «${post.title}» ដោយជោគជ័យ!`, 'info');
+      }
+      return;
+    }
+  });
+
+  // Modal Edit Price Setup
+  const modalEditPrice = document.getElementById('modalAdminEditPrice');
+  const btnCloseEditModal = document.getElementById('btnCloseEditPriceModal');
+  const btnCancelEdit = document.getElementById('btnCancelEditPrice');
+  const formEditPrice = document.getElementById('formAdminEditPrice');
+  const inputKhr = document.getElementById('inputEditPriceKhr');
+  const inputUsd = document.getElementById('inputEditPriceUsd');
+  const dishNameEl = document.getElementById('editPriceDishName');
+  const hiddenIdEl = document.getElementById('editPricePostId');
+
+  const closeEditModal = () => {
+    if (modalEditPrice) modalEditPrice.classList.remove('active');
+  };
+
+  if (btnCloseEditModal) btnCloseEditModal.addEventListener('click', closeEditModal);
+  if (btnCancelEdit) btnCancelEdit.addEventListener('click', closeEditModal);
+  if (modalEditPrice) {
+    modalEditPrice.addEventListener('click', (e) => {
+      if (e.target === modalEditPrice) closeEditModal();
+    });
+  }
+
+  // Real-time conversion between Riels and USD in modal
+  if (inputKhr && inputUsd) {
+    inputKhr.addEventListener('input', () => {
+      const khrVal = parseFloat(inputKhr.value);
+      if (!isNaN(khrVal) && khrVal > 0) {
+        inputUsd.value = (khrVal / AppState.khrRate).toFixed(2);
+      }
+    });
+
+    inputUsd.addEventListener('input', () => {
+      const usdVal = parseFloat(inputUsd.value);
+      if (!isNaN(usdVal) && usdVal > 0) {
+        inputKhr.value = Math.round(usdVal * AppState.khrRate);
+      }
+    });
+  }
+
+  if (formEditPrice) {
+    formEditPrice.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const postId = hiddenIdEl ? hiddenIdEl.value : null;
+      const newKhr = parseInt(inputKhr.value, 10);
+      const newUsd = parseFloat(inputUsd.value);
+
+      if (!postId || isNaN(newKhr) || isNaN(newUsd) || newKhr <= 0) {
+        showToast('⚠️ សូមបញ្ចូលតម្លៃឱ្យបានត្រឹមត្រូវ!', 'warn');
+        return;
+      }
+
+      const post = AppState.posts.find((p) => p.id === postId);
+      if (post) {
+        post.priceKhr = newKhr;
+        post.priceUsd = newUsd;
+        savePosts();
+        renderHomeFeed();
+        renderFoodGrid();
+        renderBeautyGrid();
+        closeEditModal();
+        showToast(`✅ បានកែប្រែតម្លៃមុខម្ហូប «${post.title}» ទៅជា ${toKhmerNumber(newKhr.toLocaleString())} ៛ ($${newUsd.toFixed(2)}) ដោយជោគជ័យ!`, 'success');
+      }
+    });
+  }
+}
+
+function openAdminEditPriceModal(postId) {
+  const post = AppState.posts.find((p) => p.id === postId);
+  if (!post) return;
+
+  const modal = document.getElementById('modalAdminEditPrice');
+  const dishNameEl = document.getElementById('editPriceDishName');
+  const hiddenIdEl = document.getElementById('editPricePostId');
+  const inputKhr = document.getElementById('inputEditPriceKhr');
+  const inputUsd = document.getElementById('inputEditPriceUsd');
+
+  if (hiddenIdEl) hiddenIdEl.value = post.id;
+  if (dishNameEl) dishNameEl.textContent = post.title;
+  if (inputKhr) inputKhr.value = post.priceKhr || 6000;
+  if (inputUsd) inputUsd.value = post.priceUsd ? post.priceUsd.toFixed(2) : (post.priceKhr ? (post.priceKhr / AppState.khrRate).toFixed(2) : '1.50');
+
+  if (modal) modal.classList.add('active');
+}
