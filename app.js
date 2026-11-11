@@ -16,7 +16,7 @@
 // 1. Storage Keys
 const STORAGE_KEYS = {
   THEME: 'mak_rachana_theme',
-  POSTS: 'mak_rachana_posts_v6',
+  POSTS: 'mak_rachana_posts_v7',
   COMMENTS: 'mak_rachana_comments_v1',
 };
 
@@ -229,6 +229,31 @@ const INITIAL_POSTS = [
     shares: 55,
     timeStr: '៧ ម៉ោងមុន',
     comments: []
+  },
+  {
+    id: 'shampoo_haicneal',
+    type: 'beauty',
+    title: 'Haicneal (ឡេ/សាប៊ូកក់សក់ព្យាបាលអង្គែ និងរមាស់ស្បែកក្បាល)',
+    category: 'shampoo',
+    categories: ['shampoo', 'treatment'],
+    priceUsd: 5.00,
+    priceKhr: 20400,
+    calories: 0,
+    desc: 'រូបមន្តវេជ្ជសាស្ត្រជំនាញព្យាបាលស្បែកក្បាលដោយផ្ទាល់ ជាមួយនឹងសមាសធាតុផ្សំ Compound Ketoconazole ដែលជាសារធាតុសម្លាប់មេរោគផ្សិតយ៉ាងមានប្រសិទ្ធភាពខ្ពស់ ជួយបំបាត់បញ្ហាស្បែកក្បាលរ៉ាំរ៉ៃឱ្យស្អាតមានទំនុកចិត្តឡើងវិញ។',
+    features: [
+      '*សមាសធាតុផ្សំ Compound Ketoconazole៖ កម្ចាត់មេរោគផ្សិត Pityrosporum ovale ដែលជាដើមហេតុចម្បងនៃអង្គែ និងរមាស់ស្បែកក្បាល។',
+      '*ព្យាបាលរមាស់ និងរលាកស្បែកក្បាល៖ ជួយសម្រាលការរលាក កាត់បន្ថយការរបកស្បែកក្បាល និងទប់ស្កាត់ការកើតអង្គែឡើងវិញយ៉ាងមានប្រសិទ្ធភាព។',
+      '*សុវត្ថិភាព និងទំនុកចិត្តខ្ពស់៖ រូបមន្តឱសថសាស្រ្តស្តង់ដារ ប្រើប្រាស់បានទាំងបុរស និងស្ត្រី ធ្វើឱ្យស្បែកក្បាលស្អាត ត្រជាក់ស្រួល និងមានទំនុកចិត្ត។'
+    ],
+    image: 'h3.png',
+    likes: 528,
+    isLiked: false,
+    shares: 145,
+    timeStr: 'ទើបតែបង្ហោះ (ផលិតផលព្យាបាលអង្គែជំនាញ 🔥)',
+    comments: [
+      { author: 'ចាន់ សុភាព', text: 'សាប៊ូ Haicneal នេះពូកែខ្លាំងណាស់ កក់តែ ២-៣ ដងបាត់រមាស់ និងបាត់អង្គែតែម្តង!' },
+      { author: 'ហេង វិសាល', text: 'ផលិតផលគុណភាពល្អពិតៗ ស្បែកក្បាលស្អាតត្រជាក់ស្រួល គ្មានអង្គែទៀតទេ!' }
+    ]
   },
   {
     id: 'beauty_1',
@@ -453,6 +478,20 @@ function initApp() {
           p.priceUsd = 1.50;
         }
       });
+      // Ensure Haicneal anti-dandruff shampoo is present and updated
+      const haicneal = INITIAL_POSTS.find(p => p.id === 'shampoo_haicneal');
+      if (haicneal) {
+        const hIdx = AppState.posts.findIndex(p => p.id === 'shampoo_haicneal' || p.image === 'h3.png');
+        if (hIdx !== -1) {
+          AppState.posts.splice(hIdx, 1);
+        }
+        const firstBeautyIdx = AppState.posts.findIndex(p => p.type === 'beauty');
+        if (firstBeautyIdx !== -1) {
+          AppState.posts.splice(firstBeautyIdx, 0, haicneal);
+        } else {
+          AppState.posts.unshift(haicneal);
+        }
+      }
       savePosts();
     } catch (e) {
       AppState.posts = INITIAL_POSTS;
@@ -626,7 +665,7 @@ function buildPostCardHtml(post) {
 
   if (isBeauty) {
     catPillClass = 'beauty';
-    catPillText = '✨ ផលិតផលសម្រស់';
+    catPillText = '🧴 សាប៊ូកម្ចាត់អង្គែ';
     targetPage = 'pageBeauty';
   } else if (isNews) {
     catPillClass = 'news';
@@ -1147,7 +1186,7 @@ function setupAdminPostFlow() {
 
       const defaultImages = {
         food: '1.jpg',
-        beauty: 'beauty_natural_soap.jpg',
+        beauty: 'h3.png',
         news: 'earth_globe.jpg',
         health: 'food_korko.jpg',
         sports: 'food_amok.jpg'
@@ -1183,7 +1222,7 @@ function setupAdminPostFlow() {
 
       const pageNames = {
         food: '«សូមជ្រើសរើសម្ហូបសម្រាប់ថ្ងៃនេះ»',
-        beauty: '«ផលិតផលសម្រស់ធម្មជាតិ»',
+        beauty: '«សាប៊ូកម្ចាត់អង្គែ»',
         news: '«ព័ត៌មាន»',
         health: '«សុខភាព និង អនាម័យ»',
         sports: '«កីឡាដើម្បីសុខភាព»'
