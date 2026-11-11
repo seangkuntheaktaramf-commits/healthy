@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="km" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ផ្ទះម៉ាក់រចនា - ម្ហូបខ្មែររសជាតិដើម និងប្រព័ន្ធលក់តាម Online</title>
+  <meta name="description" content="ផ្ទះម៉ាក់រចនា - លក់បាយ ម្ហូបខ្មែរឆ្ងាញ់ៗ ផលិតផលសម្រស់ធម្មជាតិ ព័ត៌មានសុខភាព ក្រសួងសុខាភិបាល កីឡា ព័ត៌មានក្តៅៗ RFI និងហាងឆេងមាស/អត្រាប្តូរប្រាក់">
+  
+  <!-- Khmer Fonts: DaunPenh priority + Kantumruy Pro & Battambang fallbacks -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@400;700&family=Kantumruy+Pro:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Siemreap&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ======================================================================
+       FRAME 1: TOP FIXED FRAME (LOGO, PAGE TITLE, THEME, AND 5+ MAIN MENUS)
+       ====================================================================== -->
+  <header class="frame-1-header" id="frame1Header">
+    <div class="frame-1-top-bar">
+      
+      <!-- Brand & Logo -->
+      <div class="brand-container" id="btnGoHomeBrand" title="ចុចត្រឡប់ទៅទំព័រដើម">
+        <div class="brand-logo-wrap">
+          <img src="mak_rachana_logo.jpg" alt="ផ្ទះម៉ាក់រចនា Logo" class="brand-logo-img" id="headerBrandLogo">
+        </div>
+        <div class="brand-text-block">
+          <h1 class="brand-title">ផ្ទះម៉ាក់រចនា</h1>
+          <p class="brand-subtitle">ម្ហូបខ្មែររសជាតិដើម</p>
+        </div>
+      </div>
+
+      <!-- Direct Social Contact Quick Buttons in Top Bar -->
+      <div class="header-action-tools">
+        <a href="https://t.me/MakRachanaKitchen" target="_blank" rel="noopener" class="btn-header-social telegram" title="ទាក់ទងតាម Telegram">
+          <span>✈️</span> Telegram
+        </a>
+        <a href="https://m.me/MakRachanaKitchen" target="_blank" rel="noopener" class="btn-header-social messenger" title="ទាក់ទងតាម Messenger">
+          <span>💬</span> Messenger
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Frame 1 Menu Nav: 6 Main Menus + Rates Ticker Box + Light/Dark Toggle -->
+    <nav class="frame-1-menu-nav" id="mainMenuNav">
+      <div class="menu-nav-scroll-container">
+        
+        <!-- Left Group: 6 Menus (ទំព័រដើម, ព័ត៌មាន, មុខម្ហូប, ផលិតផលសម្រស់, សុខភាព, កីឡា) -->
+        <div class="menu-nav-left-group">
+          <!-- Menu 1: ទំព័រដើម (Symbol រូបផ្ទះតូចមួយ) -->
+          <button type="button" class="nav-menu-btn active" data-page="pageHome" id="navBtnHome">
+            <span class="nav-symbol">🏠</span>
+            <span class="nav-label">ទំព័រដើម</span>
+          </button>
+
+          <!-- Menu 2: ព័ត៌មាន (Symbol រូបផែនដីតូចមួយ - RFI & Hot News) -->
+          <button type="button" class="nav-menu-btn" data-page="pageNews" id="navBtnNews">
+            <span class="nav-symbol">🌐</span>
+            <span class="nav-label">ព័ត៌មាន</span>
+          </button>
+
+          <!-- Menu 3: មុខម្ហូប (Symbol រូបចានហ៊ុយៗតូចមួយ) -->
+          <button type="button" class="nav-menu-btn" data-page="pageFood" id="navBtnFood">
+            <span class="nav-symbol">🍲</span>
+            <span class="nav-label">មុខម្ហូប</span>
+          </button>
+
+          <!-- Menu 4: ផលិតផលសម្រស់ (Symbol រូបផ្កាយ/សម្រស់) -->
+          <button type="button" class="nav-menu-btn" data-page="pageBeauty" id="navBtnBeauty">
+            <span class="nav-symbol">✨</span>
+            <span class="nav-label">ផលិតផលសម្រស់</span>
+          </button>
+
+          <!-- Menu 5: សុខភាព (Symbol រូបពេទ្យ/សុខភាព) -->
+          <button type="button" class="nav-menu-btn" data-page="pageHealth" id="navBtnHealth">
+            <span class="nav-symbol">🩺</span>
+            <span class="nav-label">សុខភាព</span>
+          </button>
+
+          <!-- Menu 6: កីឡា (Symbol រូបកីឡាតូចមួយ) -->
+          <button type="button" class="nav-menu-btn" data-page="pageSports" id="navBtnSports">
+            <span class="nav-symbol">🏃‍♂️</span>
+            <span class="nav-label">កីឡា</span>
+          </button>
+        </div>
+
+        <!-- Right Group: Rates Box (មាស & ដុល្លារ) + Light/Dark Mode Button -->
+        <div class="menu-nav-right-group">
+          <!-- ប្រអប់ ហាងឆេង មាស និង ហាងឆេងដុល្លា (ចុះមកខាងក្រោមនៅផ្នែកខាងស្តាំ បន្ទាប់ពី Menu កីឡា) -->
+          <div class="menu-rates-ticker-box" id="menuRatesTickerBox" title="ហាងឆេងមាស និងដុល្លារប្រចាំថ្ងៃ (ចុចមើលលម្អិត)">
+            <span class="rate-badge gold"><span class="rate-icon">🏆</span> មាស ១ជី: <strong>$២៨៥</strong></span>
+            <span class="rate-badge-sep">|</span>
+            <span class="rate-badge usd"><span class="rate-icon">💵</span> $១ = <strong>៤,០៨០ ៛</strong></span>
+          </div>
+
+          <!-- Button បិទ/បើកពន្លឺ (ចុះមកក្រោម ផ្នែកខាងស្តាំ បន្ទាប់ពី ប្រអប់ហាងឆេង) -->
+          <button type="button" class="btn-theme-toggle" id="btnThemeToggle" title="បិទពន្លឺ / បើកពន្លឺ (Light & Dark Mode)">
+            <span class="theme-icon" id="themeIcon">☀️</span>
+            <span class="theme-text" id="themeText">បើកពន្លឺ</span>
+          </button>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- ======================================================================
+       FRAME 2: BOTTOM DYNAMIC CONTENT FRAME (PAGES MANAGED VIA MENU SELECTION)
+       ====================================================================== -->
+  <main class="frame-2-content" id="frame2Content">
+
+    <!-- ====================================================================
+         PAGE 1: HOME PAGE (ទំព័រដើម - Featured Feed, Specials & Overview)
+         ==================================================================== -->
+    <section class="page-view active" id="pageHome">
+      
+      <!-- Welcome Hero Banner -->
+      <div class="home-hero-card">
+        <div class="hero-text-content">
+          <h1 class="hero-welcome-title">ផ្ទះម៉ាក់រចនា សូមស្វាគមន៍</h1>
+          <p class="hero-welcome-lead">រសជាតិម្ហូបខ្មែរដើមពិតៗ ឈ្ងុយឆ្ងាញ់ មានអនាម័យខ្ពស់ និងផ្តល់សុខភាពល្អដល់គ្រួសារអ្នក</p>
+          <p>
+            យើងខ្ញុំផ្តល់ជូននូវមុខម្ហូបប្រពៃណីខ្មែរចម្អិនភ្លាមៗ គ្រឿងផ្សំធម្មជាតិគ្មានជាតិគីមី 
+            គិតគូរខ្ពស់ពីអនាម័យ កម្រិតកាឡូរី និងសារធាតុចិញ្ចឹមសម្រាប់មនុស្សគ្រប់វ័យ!
+          </p>
+          <div class="hero-btn-row">
+            <button type="button" class="btn-hero-primary" data-page-jump="pageFood">
+              <span>🍲</span> មើលមុខម្ហូបថ្ងៃនេះ
+            </button>
+            <button type="button" class="btn-hero-secondary" data-page-jump="pageHealth">
+              <span>🩺</span> គន្លឹះសុខភាពចំណីអាហារ
+            </button>
+          </div>
+        </div>
+        <div class="hero-side-card">
+          <div class="hero-stat-box">
+            <span class="hero-stat-num">១០០%</span>
+            <span class="hero-stat-lbl">គ្រឿងផ្សំខ្មែរស្រស់ៗ</span>
+          </div>
+          <div class="hero-stat-box">
+            <span class="hero-stat-num">០%</span>
+            <span class="hero-stat-lbl">គ្មានសារធាតុរក្សាទុក</span>
+          </div>
+          <div class="hero-stat-box">
+            <span class="hero-stat-num">២៤/៧</span>
+            <span class="hero-stat-lbl">ទទួល Order រហ័ស</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section Title: Feed Posts from Mak Rachana -->
+      <div class="section-heading-bar">
+        <div class="heading-left">
+          <h3><span>📢</span> ការបង្ហោះមុខម្ហូប និងផលិតផលពិសេសៗថ្ងៃនេះ</h3>
+          <p>រាល់មុខម្ហូប និងផលិតផលត្រូវបាន Post ដោយផ្ទាល់ពីម្ចាស់ Page «ផ្ទះម៉ាក់រចនា»</p>
+        </div>
+        <div class="heading-right">
+          <span class="feed-filter-tag active" data-feed-filter="all">ទាំងអស់</span>
+          <span class="feed-filter-tag" data-feed-filter="food">មុខម្ហូប</span>
+          <span class="feed-filter-tag" data-feed-filter="beauty">សម្រស់</span>
+        </div>
+      </div>
+
+      <!-- Posts Feed Container -->
+      <div class="feed-posts-stream" id="homeFeedPostsList">
+        <!-- Rendered dynamically by JavaScript -->
+      </div>
+
+    </section>
+
+    <!-- ====================================================================
+         PAGE 2: NEWS PAGE (ព័ត៌មាន - RFI Khmer & Hot News Live Feed)
+         ==================================================================== -->
+    <section class="page-view" id="pageNews">
+      
+      <div class="page-header-banner news-banner">
+        <div class="banner-icon-circle">🌐</div>
+        <div class="banner-info">
+          <h2 class="page-main-heading">ព័ត៌មាន</h2>
+          <p class="page-subheading">ទំព័រព័ត៌មានជាតិ និងអន្តរជាតិទាន់ហេតុការណ៍ចុងក្រោយពី RFI ខេមរភាសា និង Hot News ប្រចាំថ្ងៃ</p>
+        </div>
+        <button type="button" class="btn-refresh-data" id="btnRefreshNews">
+          <span>🔄</span> ធ្វើបច្ចុប្បន្នភាព (Update)
+        </button>
+      </div>
+
+      <!-- News Category Filters -->
+      <div class="news-category-bar">
+        <button class="news-cat-btn active" data-news-cat="all">ទាំងអស់</button>
+        <button class="news-cat-btn" data-news-cat="rfi">📻 RFI ខេមរភាសា</button>
+        <button class="news-cat-btn" data-news-cat="hot">🔥 Hot News កម្ពុជា</button>
+        <button class="news-cat-btn" data-news-cat="economy">📈 សេដ្ឋកិច្ច & ជីវភាព</button>
+      </div>
+
+      <!-- News Articles Grid -->
+      <div class="news-articles-grid" id="newsArticlesContainer">
+        <!-- Injected via JavaScript -->
+      </div>
+
+    </section>
+
+    <!-- ====================================================================
+         PAGE 3: FOOD MENU PAGE (មុខម្ហូប - គ្រឿងបរិភោគទាំងអស់ Post ដោយម្ចាស់ Page)
+         ==================================================================== -->
+    <section class="page-view" id="pageFood">
+      
+      <div class="page-header-banner food-banner">
+        <div class="banner-icon-circle">🍲</div>
+        <div class="banner-info">
+          <h2 class="page-main-heading">សូមជ្រើសរើសម្ហូបសម្រាប់ថ្ងៃនេះ</h2>
+          <p class="page-subheading">មុខម្ហូបខ្មែររសជាតិដើម ចម្អិនក្តៅៗស្រស់ៗ មានអនាម័យខ្ពស់ និងផ្តល់សុខភាពល្អដល់មនុស្សគ្រប់វ័យ</p>
+        </div>
+      </div>
+
+      <!-- Food Category Filter Pills -->
+      <div class="food-categories-row">
+        <button class="food-cat-btn active" data-food-cat="all">🍽️ ទាំងអស់</button>
+        <button class="food-cat-btn" data-food-cat="soup">🥣 សម្ល & ស្ងោរ</button>
+        <button class="food-cat-btn" data-food-cat="fried">🍳 ម្ហូបចៀន & បំពង</button>
+        <button class="food-cat-btn" data-food-cat="stir">🥢 ម្ហូបឆា & កូរ</button>
+        <button class="food-cat-btn" data-food-cat="healthy">🥗 ម្ហូបសុខភាព & បន្លែ</button>
+      </div>
+
+      <!-- Food Menu Posts Grid -->
+      <div class="food-posts-grid" id="foodPostsContainer">
+        <!-- Injected via JavaScript -->
+      </div>
+
+    </section>
+
+    <!-- ====================================================================
+         PAGE 4: BEAUTY PRODUCTS PAGE (ផលិតផលសម្រស់ - Post ដោយម្ចាស់ Page)
+         ==================================================================== -->
+    <section class="page-view" id="pageBeauty">
+      
+      <div class="page-header-banner beauty-banner">
+        <div class="banner-icon-circle">✨</div>
+        <div class="banner-info">
+          <h2 class="page-main-heading">ផលិតផលសម្រស់ធម្មជាតិ</h2>
+          <p class="page-subheading">ផលិតផលថែរក្សាស្បែក និងសម្រស់ចម្រាញ់ពីរុក្ខជាតិខ្មែរធម្មជាតិ ១០០% សុវត្ថិភាពគ្មានជាតិគីមី</p>
+        </div>
+      </div>
+
+      <!-- Beauty Posts Grid -->
+      <div class="beauty-posts-grid" id="beautyPostsContainer">
+        <!-- Injected via JavaScript -->
+      </div>
+
+    </section>
+
+    <!-- ====================================================================
+         PAGE 5: HEALTH PAGE (សុខភាព - ក្រសួងសុខាភិបាល & ការពារជំងឺគ្រប់វ័យ)
+         ==================================================================== -->
+    <section class="page-view" id="pageHealth">
+      
+      <div class="page-header-banner health-banner">
+        <div class="banner-icon-circle">🩺</div>
+        <div class="banner-info">
+          <h2 class="page-main-heading">សុខភាព និង អនាម័យ</h2>
+          <p class="page-subheading">ព័ត៌មានសុខភាព វិធានការអនាម័យចំណីអាហារ និងការណែនាំពីក្រសួងសុខាភិបាល (MoH) សម្រាប់មនុស្សគ្រប់វ័យ</p>
+        </div>
+      </div>
+
+      <!-- Health Articles Grid -->
+      <div class="health-cards-grid" id="healthArticlesContainer">
+        <!-- Injected via JavaScript -->
+      </div>
+
+    </section>
+
+    <!-- ====================================================================
+         PAGE 6: SPORTS & FITNESS PAGE (កីឡា - ការហាត់ប្រាណ និងណែនាំកីឡា)
+         ==================================================================== -->
+    <section class="page-view" id="pageSports">
+      
+      <div class="page-header-banner sports-banner">
+        <div class="banner-icon-circle">🏃‍♂️</div>
+        <div class="banner-info">
+          <h2 class="page-main-heading">កីឡាដើម្បីសុខភាព</h2>
+          <p class="page-subheading">ការណែនាំអំពីការហាត់ប្រាណ កីឡា និងលំហាត់កាយសម្បទាប្រចាំថ្ងៃដើម្បីសុខភាពមាំមួន</p>
+        </div>
+      </div>
+
+      <!-- Sports Cards Grid -->
+      <div class="sports-cards-grid" id="sportsCardsContainer">
+        <!-- Injected via JavaScript -->
+      </div>
+
+    </section>
+
+    <!-- ====================================================================
+         PAGE 7: GOLD RATES & CURRENCY EXCHANGE (ហាងឆេងមាស & ប្តូរប្រាក់)
+         ==================================================================== -->
+    <section class="page-view" id="pageRates">
+      
+      <div class="page-header-banner rates-banner">
+        <div class="banner-icon-circle">💰</div>
+        <div class="banner-info">
+          <h2>ហាងឆេងមាស និងអត្រាប្តូរប្រាក់រៀលខ្មែរ (KHR) ទៅជា ដុល្លារអាមេរិក (USD)</h2>
+          <p>តាមដានតម្លៃទីផ្សារមាសជាក់ស្តែងក្នុងរាជធានីភ្នំពេញ និងប្រព័ន្ធគណនាប្តូរប្រាក់រហ័សទាន់ចិត្ត</p>
+        </div>
+      </div>
+
+      <div class="rates-layout-grid">
+        
+        <!-- Left: Gold Rate Table -->
+        <div class="rates-card-box">
+          <div class="rates-card-title">
+            <span>🏆</span> ហាងឆេងមាសប្រចាំថ្ងៃ (ទីផ្សារកម្ពុជា)
+          </div>
+          <div class="rates-table-wrap">
+            <table class="rates-table">
+              <thead>
+                <tr>
+                  <th>ប្រភេទមាស</th>
+                  <th>តម្លៃទិញចូល (USD)</th>
+                  <th>តម្លៃលក់ចេញ (USD)</th>
+                  <th>ប្រែប្រួល</th>
+                </tr>
+              </thead>
+              <tbody id="goldRatesTableBody">
+                <tr>
+                  <td>មាសគីឡូ (99.99%)</td>
+                  <td class="rate-val">$២,៨៤០ / តម្លឹង</td>
+                  <td class="rate-val">$២,៨៥០ / តម្លឹង</td>
+                  <td class="rate-up">+ $៥.០០</td>
+                </tr>
+                <tr>
+                  <td>មាសផ្លាកទីន (75%)</td>
+                  <td class="rate-val">$២,១៣០ / តម្លឹង</td>
+                  <td class="rate-val">$២,១៤៥ / តម្លឹង</td>
+                  <td class="rate-up">+ $៣.៥០</td>
+                </tr>
+                <tr>
+                  <td>មាស ១ ជី (99.99%)</td>
+                  <td class="rate-val">$២៨៤.០០ / ជី</td>
+                  <td class="rate-val">$២៨៥.០០ / ជី</td>
+                  <td class="rate-up">+ $០.៥០</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <span class="rates-update-time" id="goldRateUpdateTime">⏱️ ធ្វើបច្ចុប្បន្នភាពចុងក្រោយ៖ ថ្ងៃនេះ ម៉ោង ០៨:៣០ ព្រឹក</span>
+        </div>
+
+        <!-- Right: Currency Exchange Converter (KHR to USD) -->
+        <div class="rates-card-box">
+          <div class="rates-card-title">
+            <span>🔄</span> ឧបករណ៍គណនាប្តូរប្រាក់ រៀល (KHR) ទៅជា ដុល្លារ (USD)
+          </div>
+
+          <div class="currency-converter-body">
+            <div class="converter-rate-badge">
+              <span>អត្រាផ្លូវការ៖</span> <strong>១ USD = ៤,០៨០ KHR</strong>
+            </div>
+
+            <div class="converter-inputs-group">
+              <div class="curr-input-wrap">
+                <label for="inputKhrAmount">ប្រាក់រៀលខ្មែរ (KHR)</label>
+                <div class="curr-field">
+                  <input type="number" id="inputKhrAmount" class="curr-input" placeholder="ឧ. ៤០,៨០០" value="40800">
+                  <span class="curr-symbol-badge">៛ KHR</span>
+                </div>
+              </div>
+
+              <div class="converter-swap-arrow">⇄</div>
+
+              <div class="curr-input-wrap">
+                <label for="inputUsdAmount">ប្រាក់ដុល្លារអាមេរិក (USD)</label>
+                <div class="curr-field">
+                  <input type="number" id="inputUsdAmount" class="curr-input" placeholder="ឧ. ១០.០០" value="10.00" step="0.01">
+                  <span class="curr-symbol-badge">$ USD</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="converter-result-box" id="converterResultBox">
+              <span>៤០,៨០០ រៀល = <strong>$១០.០០ ដុល្លារ</strong></span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- ======================================================================
+       MODAL: ADMIN POST CREATION (សម្រាប់តែម្ចាស់ PAGE «ផ្ទះម៉ាក់រចនា»)
+       ====================================================================== -->
+  <div class="modal-overlay" id="modalAdminPost">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-icon">📝</span>
+          <h3>បង្ហោះមុខម្ហូប ឬផលិតផលថ្មី (Admin ផ្ទះម៉ាក់រចនា)</h3>
+        </div>
+        <button type="button" class="btn-close-modal" id="btnCloseAdminPostModal">&times;</button>
+      </div>
+
+      <form id="formAdminPost">
+        <div class="modal-body">
+          <div class="input-group">
+            <label for="adminPostType">ប្រភេទការបង្ហោះ</label>
+            <select id="adminPostType" class="input-control">
+              <option value="food">🍲 មុខម្ហូប (គ្រឿងបរិភោគ)</option>
+              <option value="beauty">✨ ផលិតផលសម្រស់</option>
+            </select>
+          </div>
+
+          <div class="input-group">
+            <label for="adminPostTitle">ឈ្មោះមុខម្ហូប / ផលិតផល</label>
+            <input type="text" id="adminPostTitle" class="input-control" placeholder="ឧ. អាម៉ុកត្រីរសជាតិដើម" required>
+          </div>
+
+          <div class="input-row-2">
+            <div class="input-group">
+              <label for="adminPostPriceUsd">តម្លៃជាដុល្លារ ($)</label>
+              <input type="number" step="0.1" id="adminPostPriceUsd" class="input-control" placeholder="ឧ. 5.5" required>
+            </div>
+            <div class="input-group">
+              <label for="adminPostCalorie">កាឡូរី (kcal)</label>
+              <input type="number" id="adminPostCalorie" class="input-control" placeholder="ឧ. 320">
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label for="adminPostDesc">ការរៀបរាប់ និងអត្ថប្រយោជន៍សុខភាព</label>
+            <textarea id="adminPostDesc" class="input-control" rows="3" placeholder="ឧ. ចម្អិនពីត្រីស្រស់ៗ គ្រឿងបុកខ្មែរឈ្ងុយឆ្ងាញ់ ល្អសម្រាប់សុខភាពបេះដូង និងកម្លាំង..." required></textarea>
+          </div>
+
+          <div class="input-group">
+            <label for="adminPostImageFile">ភ្ជាប់រូបភាព (Photo)</label>
+            <input type="file" id="adminPostImageFile" accept="image/*" class="input-control">
+            <div class="admin-preview-box" id="adminPreviewWrap" style="display: none;">
+              <img id="adminPostPreviewImg" alt="Preview">
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn-ghost" id="btnCancelAdminPost">បោះបង់</button>
+          <button type="submit" class="btn-primary">
+            <span>🚀</span> បង្ហោះលក់ភ្លាមៗ
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       MODAL: COMMENTS & FEEDBACK DRAWER
+       ====================================================================== -->
+  <div class="modal-overlay" id="modalCommentsDrawer">
+    <div class="modal-dialog modal-comments">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-icon">💬</span>
+          <h3 id="commentsModalTitle">មតិយោបល់លើមុខម្ហូប</h3>
+        </div>
+        <button type="button" class="btn-close-modal" id="btnCloseCommentsDrawer">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="comments-stream-list" id="commentsStreamList">
+          <!-- Comments rendered dynamically -->
+        </div>
+
+        <form id="formAddCommentModal" class="form-add-comment-modal">
+          <input type="text" id="inputCommentText" class="input-control" placeholder="សរសេរមតិ ឬសំណួរអំពីមុខម្ហូបនេះ..." required>
+          <button type="submit" class="btn-primary">ផ្ញើមតិ</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
