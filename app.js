@@ -16,7 +16,7 @@
 // 1. Storage Keys
 const STORAGE_KEYS = {
   THEME: 'mak_rachana_theme',
-  POSTS: 'mak_rachana_posts_v7',
+  POSTS: 'mak_rachana_posts_v9',
   COMMENTS: 'mak_rachana_comments_v1',
 };
 
@@ -29,6 +29,31 @@ function toKhmerNumber(num) {
 
 // 3. Pre-seeded Data (Dishes, Beauty, News, Health, Sports)
 const INITIAL_POSTS = [
+  {
+    id: 'food_bitter_melon_soup',
+    type: 'food',
+    title: 'សម្លស្ងោរម្រះញាត់សាច់ជ្រូក — រសជាតិដើមបែបធម្មជាតិ សុខភាពល្អ និងអនាម័យខ្ពស់',
+    category: 'soup',
+    categories: ['soup', 'healthy'],
+    priceUsd: 1.50,
+    priceKhr: 6000,
+    calories: 260,
+    desc: 'សម្លស្ងោរម្រះញាត់សាច់ជ្រូក រសជាតិដើមបែបធម្មជាតិ សុខភាពល្អ និងអនាម័យខ្ពស់ ចម្អិនថ្មីៗក្តៅៗផ្ដល់នូវឱជារសឆ្ងាញ់ និងផាសុកភាពប្រចាំ «ផ្ទះម៉ាក់រចនា»។',
+    features: [
+      '*រសជាតិឆ្ងាញ់ជាប់ចិត្ត និងកម្ដៅស្រួលខ្លួន: ទឹកស៊ុបថ្លាផ្អែមឆ្ងាញ់ ចម្រាញ់ចេញពីការរម្ងាស់ឆ្អឹង និងសាច់ជ្រូកស្រស់ ក្លិនឈ្ងុយផ្សំគ្រឿងជាមួយម្រេចកំពត និង រសជាតិល្វីងតិចៗបែបស្រាលស្រទន់របស់ម្រះ ជួយរំលាយអាហារ និងធ្វើឱ្យស្រស់ស្រាយអារម្មណ៍បន្ទាប់ពីទទួលទាន។',
+      '*សាច់ជ្រូកស្រស់គុណភាពខ្ពស់៖ ជ្រើសរើសសាច់ជ្រូកស្រស់ចិញ្ច្រាំផ្ចិតផ្ចង់ ញាត់ក្នុងម្រះស្រស់ៗ គ្មានក្លិនឆ្អាប ផ្ដល់ប្រូតេអ៊ីន និងថាមពលពេញលេញ។',
+      '*អនាម័យខ្ពស់ ជំនួយសុខភាព៖ ម្រះស្រស់ធម្មជាតិជួយបញ្ចុះកម្ដៅក្នុងខ្លួន សម្រួលសរសៃឈាម និងប្រព័ន្ធរំលាយអាហារ ចម្អិនតាមស្តង់ដារអនាម័យខ្ពស់។'
+    ],
+    image: 'F1.jpg',
+    likes: 452,
+    isLiked: false,
+    shares: 125,
+    timeStr: 'ទើបតែបង្ហោះ (ម្ហូបពិសេសប្រចាំថ្ងៃ 🔥)',
+    comments: [
+      { author: 'ចាន់ ធីតា', text: 'សម្លស្ងោរម្រះនេះទឹកស៊ុបផ្អែមឆ្ងាញ់ខ្លាំងណាស់ ម្រះល្វីងស្រទន់ញ៉ាំស្រួលខ្លួនពិតមែន!' },
+      { author: 'សុខ ម៉េង', text: 'សាច់ជ្រូកញាត់ណែនចូលជាតិល្អ អនាម័យខ្ពស់ ញ៉ាំជាមួយបាយក្តៅៗឆ្ងាញ់លើសពីការរំពឹងទុក!' }
+    ]
+  },
   {
     id: 'food_beef_sour_soup',
     type: 'food',
@@ -229,6 +254,57 @@ const INITIAL_POSTS = [
     shares: 55,
     timeStr: '៧ ម៉ោងមុន',
     comments: []
+  },
+  {
+    id: 'shampoo_haicneal_h9',
+    type: 'beauty',
+    title: 'Haicneal (ឡេ/សាប៊ូកក់សក់ព្យាបាលអង្គែ និងរមាស់ស្បែកក្បាល)',
+    category: 'shampoo',
+    categories: ['shampoo', 'treatment'],
+    priceUsd: 5.00,
+    priceKhr: 20400,
+    calories: 0,
+    desc: 'Haicneal (ឡេ/សាប៊ូកក់សក់ព្យាបាលអង្គែ និងរមាស់ស្បែកក្បាល) ព្យាបាលបញ្ហាស្បែកក្បាល (Scalp Disorders) ព្យាបាលជំងឺរលាកស្បែកក្បាលដោយសារមេរោគផ្សិត និងខ្លាញ់លើស (Seborrheic Dermatitis) ប្រកបដោយប្រសិទ្ធភាពខ្ពស់ និងសុវត្ថិភាព។',
+    features: [
+      '*ព្យាបាលបញ្ហាស្បែកក្បាល (Scalp Disorders): ព្យាបាលជំងឺរលាកស្បែកក្បាលដោយសារមេរោគផ្សិត និងខ្លាញ់លើស (Seborrheic Dermatitis)',
+      '*កម្ចាត់អង្គែដល់ឫសគល់ (Dedandruff)៖ កម្ចាត់អង្គែកម្រិតធ្ងន់ អង្គែរបកជាបន្ទះៗ និងការពារកុំឱ្យអង្គែត្រឡប់មកវិញ។',
+      '*បំបាត់ការរមាស់ភ្លាមៗ (Antipruritus)៖ ជួយកាត់បន្ថយអាការរមាស់ ក្រហាយ និងសម្រួលស្បែកក្បាលឱ្យមានផាសុកភាព ត្រជាក់ស្រួល។',
+      '*សមាសធាតុផ្សំ Compound Ketoconazole៖ សម្លាប់មេរោគផ្សិតស្បែកក្បាលយ៉ាងមានប្រសិទ្ធភាពខ្ពស់ ផ្ដល់ទំនុកចិត្ត និងសុវត្ថិភាពខ្ពស់បំផុត។'
+    ],
+    image: 'h9.png',
+    likes: 715,
+    isLiked: false,
+    shares: 210,
+    timeStr: 'ទើបតែបង្ហោះ (ផលិតផលព្យាបាលស្បែកក្បាលជំនាញ 🔥)',
+    comments: [
+      { author: 'លីណា សេង', text: 'សាប៊ូ Haicneal នេះពូកែខ្លាំងណាស់ ស្បែកក្បាលដែលធ្លាប់រលាក និងកើតផ្សិតខ្លាញ់ Seborrheic Dermatitis ឥឡូវជាសះស្បើយ ១០០%!' },
+      { author: 'គឹម ហ៊ាង', text: 'កក់តែ ២-៣ ដងបាត់រមាស់ និងបាត់របកស្បែកក្បាលភ្លាមៗ ទំនុកចិត្តខ្ពស់ពិតៗ!' }
+    ]
+  },
+  {
+    id: 'shampoo_haicneal_h7',
+    type: 'beauty',
+    title: 'Haicneal (ឡេ/សាប៊ូកក់សក់ព្យាបាលអង្គែ និងរមាស់ស្បែកក្បាល)',
+    category: 'shampoo',
+    categories: ['shampoo', 'treatment'],
+    priceUsd: 5.00,
+    priceKhr: 20400,
+    calories: 0,
+    desc: 'រូបមន្តវេជ្ជសាស្ត្រជំនាញព្យាបាលស្បែកក្បាលដោយផ្ទាល់ កម្ចាត់អង្គែដល់ឫសគល់ (Dedandruff) និងបំបាត់ការរមាស់ភ្លាមៗ (Antipruritus) ជួយបំបាត់បញ្ហាស្បែកក្បាលរ៉ាំរ៉ៃឱ្យស្អាតមានទំនុកចិត្តឡើងវិញ។',
+    features: [
+      '*កម្ចាត់អង្គែដល់ឫសគល់ (Dedandruff)៖ កម្ចាត់អង្គែកម្រិតធ្ងន់ អង្គែរបកជាបន្ទះៗ និងការពារកុំឱ្យអង្គែត្រឡប់មកវិញ។',
+      '*បំបាត់ការរមាស់ភ្លាមៗ (Antipruritus)៖ ជួយកាត់បន្ថយអាការរមាស់ ក្រហាយ និងសម្រួលស្បែកក្បាលឱ្យមានផាសុកភាព។',
+      '*សមាសធាតុផ្សំ Compound Ketoconazole៖ សម្លាប់មេរោគផ្សិតស្បែកក្បាលយ៉ាងមានប្រសិទ្ធភាពខ្ពស់ ផ្ដល់ទំនុកចិត្ត និងសុវត្ថិភាពខ្ពស់បំផុត។'
+    ],
+    image: 'h7.png',
+    likes: 642,
+    isLiked: false,
+    shares: 188,
+    timeStr: 'ទើបតែបង្ហោះ (ផលិតផលព្យាបាលអង្គែជំនាញ 🔥)',
+    comments: [
+      { author: 'ចាន់ សុភាព', text: 'សាប៊ូ Haicneal នេះពូកែខ្លាំងណាស់ កក់តែ ២-៣ ដងបាត់រមាស់ និងបាត់អង្គែរបកជាបន្ទះៗតែម្តង!' },
+      { author: 'សុខ គន្ធា', text: 'ផលិតផលគុណភាពខ្ពស់ពិតៗ កម្ចាត់អង្គែដល់ឫសគល់ បាត់រមាស់ភ្លាមៗ ត្រជាក់ស្បែកក្បាលស្រួលណាស់!' }
+    ]
   },
   {
     id: 'shampoo_haicneal',
@@ -460,7 +536,7 @@ function initApp() {
     try {
       AppState.posts = JSON.parse(savedPosts);
       // Ensure all signature and food dishes are updated to 6,000 Riels ($1.50)
-      const signatureIds = ['food_korko_special', 'food_pork_egg_stew', 'food_ginger_chicken', 'food_beef_sour_soup'];
+      const signatureIds = ['food_korko_special', 'food_pork_egg_stew', 'food_ginger_chicken', 'food_beef_sour_soup', 'food_bitter_melon_soup'];
       for (const sigId of signatureIds) {
         const dish = INITIAL_POSTS.find(p => p.id === sigId);
         if (dish) {
@@ -478,18 +554,46 @@ function initApp() {
           p.priceUsd = 1.50;
         }
       });
-      // Ensure Haicneal anti-dandruff shampoo is present and updated
-      const haicneal = INITIAL_POSTS.find(p => p.id === 'shampoo_haicneal');
-      if (haicneal) {
-        const hIdx = AppState.posts.findIndex(p => p.id === 'shampoo_haicneal' || p.image === 'h3.png');
-        if (hIdx !== -1) {
-          AppState.posts.splice(hIdx, 1);
+      // Ensure Haicneal anti-dandruff shampoo (h9.png) is present and top-featured
+      const haicnealH9 = INITIAL_POSTS.find(p => p.id === 'shampoo_haicneal_h9');
+      if (haicnealH9) {
+        const h9Idx = AppState.posts.findIndex(p => p.id === 'shampoo_haicneal_h9' || p.image === 'h9.png');
+        if (h9Idx !== -1) {
+          AppState.posts.splice(h9Idx, 1);
         }
         const firstBeautyIdx = AppState.posts.findIndex(p => p.type === 'beauty');
         if (firstBeautyIdx !== -1) {
-          AppState.posts.splice(firstBeautyIdx, 0, haicneal);
+          AppState.posts.splice(firstBeautyIdx, 0, haicnealH9);
         } else {
-          AppState.posts.unshift(haicneal);
+          AppState.posts.unshift(haicnealH9);
+        }
+      }
+      // Ensure Haicneal (h7.png) is also present right below h9
+      const haicnealH7 = INITIAL_POSTS.find(p => p.id === 'shampoo_haicneal_h7');
+      if (haicnealH7) {
+        const h7Idx = AppState.posts.findIndex(p => p.id === 'shampoo_haicneal_h7' || p.image === 'h7.png');
+        if (h7Idx !== -1) {
+          AppState.posts.splice(h7Idx, 1);
+        }
+        const h9Pos = AppState.posts.findIndex(p => p.id === 'shampoo_haicneal_h9');
+        if (h9Pos !== -1) {
+          AppState.posts.splice(h9Pos + 1, 0, haicnealH7);
+        } else {
+          AppState.posts.unshift(haicnealH7);
+        }
+      }
+      // Ensure Haicneal (h3.png) is also present right below h7
+      const haicnealH3 = INITIAL_POSTS.find(p => p.id === 'shampoo_haicneal');
+      if (haicnealH3) {
+        const h3Idx = AppState.posts.findIndex(p => p.id === 'shampoo_haicneal' || p.image === 'h3.png');
+        if (h3Idx !== -1) {
+          AppState.posts.splice(h3Idx, 1);
+        }
+        const h7Pos = AppState.posts.findIndex(p => p.id === 'shampoo_haicneal_h7');
+        if (h7Pos !== -1) {
+          AppState.posts.splice(h7Pos + 1, 0, haicnealH3);
+        } else {
+          AppState.posts.unshift(haicnealH3);
         }
       }
       savePosts();
@@ -1185,8 +1289,8 @@ function setupAdminPostFlow() {
       }
 
       const defaultImages = {
-        food: '1.jpg',
-        beauty: 'h3.png',
+        food: 'F1.jpg',
+        beauty: 'h9.png',
         news: 'earth_globe.jpg',
         health: 'food_korko.jpg',
         sports: 'food_amok.jpg'

@@ -49,7 +49,7 @@
     <nav class="frame-1-menu-nav" id="mainMenuNav">
       <div class="menu-nav-scroll-container">
         
-        <!-- Left Group: 6 Menus (ទំព័រដើម, ព័ត៌មាន, មុខម្ហូប, ផលិតផលសម្រស់, សុខភាព, កីឡា) -->
+        <!-- Left Group: Menus (ទំព័រដើម, មុខម្ហូប, សាប៊ូកម្ចាត់អង្គែ) -->
         <div class="menu-nav-left-group">
           <!-- Menu 1: ទំព័រដើម (Symbol រូបផ្ទះតូចមួយ) -->
           <button type="button" class="nav-menu-btn active" data-page="pageHome" id="navBtnHome">
@@ -57,19 +57,13 @@
             <span class="nav-label">ទំព័រដើម</span>
           </button>
 
-          <!-- Menu 2: ព័ត៌មាន (Symbol រូបផែនដីតូចមួយ - RFI & Hot News) -->
-          <button type="button" class="nav-menu-btn" data-page="pageNews" id="navBtnNews">
-            <span class="nav-symbol">🌐</span>
-            <span class="nav-label">ព័ត៌មាន</span>
-          </button>
-
-          <!-- Menu 3: មុខម្ហូប (Symbol រូបចានហ៊ុយៗតូចមួយ) -->
+          <!-- Menu 2: មុខម្ហូប (Symbol រូបចានហ៊ុយៗតូចមួយ) -->
           <button type="button" class="nav-menu-btn" data-page="pageFood" id="navBtnFood">
             <span class="nav-symbol">🍲</span>
             <span class="nav-label">មុខម្ហូប</span>
           </button>
 
-          <!-- Menu 4: សាប៊ូកម្ចាត់អង្គែ -->
+          <!-- Menu 3: សាប៊ូកម្ចាត់អង្គែ -->
           <button type="button" class="nav-menu-btn" data-page="pageBeauty" id="navBtnBeauty">
             <span class="nav-symbol">🧴</span>
             <span class="nav-label">សាប៊ូកម្ចាត់អង្គែ</span>
@@ -156,13 +150,12 @@
       <div class="section-heading-bar">
         <div class="heading-left">
           <h3><span>📢</span> ព័ត៌មានចម្រុះ និងថ្មីៗបំផុត</h3>
-          <p>ប្រមូលផ្តុំរាល់ការបង្ហោះមុខម្ហូបថ្មីៗ សាប៊ូកម្ចាត់អង្គែ និងព័ត៌មានទាន់ហេតុការណ៍ប្រចាំថ្ងៃ</p>
+          <p>ប្រមូលផ្តុំរាល់ការបង្ហោះមុខម្ហូបខ្មែរឆ្ងាញ់ៗ និងសាប៊ូកម្ចាត់អង្គែគុណភាពខ្ពស់</p>
         </div>
         <div class="heading-right">
           <span class="feed-filter-tag active" data-feed-filter="all">🌐 ទាំងអស់ (ចម្រុះ)</span>
           <span class="feed-filter-tag" data-feed-filter="food">🍲 មុខម្ហូប</span>
           <span class="feed-filter-tag" data-feed-filter="beauty">🧴 សាប៊ូកម្ចាត់អង្គែ</span>
-          <span class="feed-filter-tag" data-feed-filter="news">📰 ព័ត៌មាន</span>
         </div>
       </div>
 
@@ -173,7 +166,7 @@
             <img src="LGR1.jpg" alt="Admin ផ្ទះម៉ាក់រចនា">
           </div>
           <div class="create-post-input-fake">
-            <span>តើលោកអ្នកចង់បង្ហោះមុខម្ហូប ផលិតផល ឬព័ត៌មានអ្វីថ្មីថ្ងៃនេះ? (Admin Post)...</span>
+            <span>តើលោកអ្នកចង់បង្ហោះមុខម្ហូប ឬសាប៊ូកម្ចាត់អង្គែអ្វីថ្មីថ្ងៃនេះ? (Admin Post)...</span>
           </div>
         </div>
         <div class="create-post-actions-row">
@@ -182,9 +175,6 @@
           </button>
           <button type="button" class="btn-create-act" data-quick-type="beauty">
             <span>🧴</span> <span>សាប៊ូកម្ចាត់អង្គែ</span>
-          </button>
-          <button type="button" class="btn-create-act" data-quick-type="news">
-            <span>🌐</span> <span>ព័ត៌មាន</span>
           </button>
         </div>
       </div>
@@ -434,13 +424,12 @@
             <select id="adminPostType" class="input-control">
               <option value="food">🍲 មុខម្ហូប ➔ ចូលទំព័រ «មុខម្ហូប»</option>
               <option value="beauty">🧴 សាប៊ូកម្ចាត់អង្គែ ➔ ចូលទំព័រ «សាប៊ូកម្ចាត់អង្គែ»</option>
-              <option value="news">🌐 ព័ត៌មាន ➔ ចូលទំព័រ «ព័ត៌មាន»</option>
             </select>
           </div>
 
           <div class="input-group">
-            <label for="adminPostTitle">ចំណងជើង / ឈ្មោះមុខម្ហូប / ព័ត៌មាន</label>
-            <input type="text" id="adminPostTitle" class="input-control" placeholder="ឧ. ម្ជូរគ្រឿងសាច់ រសជាតិដើម" required>
+            <label for="adminPostTitle">ចំណងជើង / ឈ្មោះមុខម្ហូប / ឈ្មោះសាប៊ូកម្ចាត់អង្គែ</label>
+            <input type="text" id="adminPostTitle" class="input-control" placeholder="ឧ. ម្ជូរគ្រឿងសាច់ រសជាតិដើម ឬ Haicneal" required>
           </div>
 
           <div class="input-row-2" id="adminPriceRow">
