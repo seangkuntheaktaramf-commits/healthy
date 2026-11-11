@@ -16,7 +16,7 @@
 // 1. Storage Keys
 const STORAGE_KEYS = {
   THEME: 'mak_rachana_theme',
-  POSTS: 'mak_rachana_posts_v2',
+  POSTS: 'mak_rachana_posts_v5',
   COMMENTS: 'mak_rachana_comments_v1',
 };
 
@@ -32,26 +32,101 @@ const INITIAL_POSTS = [
   {
     id: 'food_beef_sour_soup',
     type: 'food',
-    title: 'ម្ជូរគ្រឿងសាច់ រសជាតិដើម',
+    title: 'ម្ជូរគ្រឿងសាច់គោពិសេស រស់ជាតិដើម',
     category: 'soup',
     categories: ['soup', 'healthy'],
-    priceUsd: 5.50,
-    priceKhr: 22440,
+    priceUsd: 1.25,
+    priceKhr: 5000,
     calories: 310,
-    desc: 'ម្ជូរគ្រឿងសាច់ រស់ជាតិដើម ឈ្ងុយឆ្ងាញ់ពិសេសប្រចាំ «ផ្ទះម៉ាក់រចនា» ចម្អិនតាមរូបមន្តខ្មែរបុរាណពិតៗ ជាមួយគ្រឿងផ្សំធម្មជាតិស្រស់ៗ និងអនាម័យខ្ពស់។',
+    desc: 'ម្ជូរគ្រឿងសាច់គោពិសេស រស់ជាតិដើម ឈ្ងុយឆ្ងាញ់ពិសេសប្រចាំ «ផ្ទះម៉ាក់រចនា» ចម្អិនតាមរូបមន្តខ្មែរបុរាណពិតៗ ជាមួយគ្រឿងផ្សំធម្មជាតិស្រស់ៗ និងអនាម័យខ្ពស់។',
     features: [
-      'សាច់គោស្រស់គុណភាពខ្ពស់៖ ជ្រើសរើសសាច់គោជាប់ខ្លាញ់ផុយទន់ល្មម រម្ងាស់ចូលជាតិយ៉ាងល្អ គ្មានក្លិនឆ្អាប ផ្តល់ជាតិប្រូតេអ៊ីន និងថាមពលពេញលេញ។',
-      'គ្រឿងបុកស្រស់ៗពីធម្មជាតិ៖ ផ្សំពីស្លឹកគ្រៃ រមៀត រំដេង ខ្ទឹមស និងស្លឹកក្រូចសើច ដែលសម្បូរដោយសារធាតុប្រឆាំងអុកស៊ីតកម្ម ជួយសម្រួលការរំលាយអាហារ និងបង្កើនប្រព័ន្ធការពាររាងកាយ។',
-      'រសជាតិឆ្ងាញ់ អនាម័យខ្ពស់៖ ជូរអែមមុតស្រាលស្រទន់ ក្រអូបឈ្ងុយគ្រឿងបុកខ្មែរ ចម្អិនថ្មីៗក្តៅៗតាមស្តង់ដារអនាម័យត្រឹមត្រូវ គ្មានបារម្ភរឿងសុខភាព។'
+      '*សាច់គោស្រស់គុណភាពខ្ពស់៖ ជ្រើសរើសសាច់គោជាប់ខ្លាញ់ផុយទន់ល្មម រម្ងាស់ចូលជាតិយ៉ាងល្អ គ្មានក្លិនឆ្អាប ផ្តល់ជាតិប្រូតេអ៊ីន និងថាមពលពេញលេញ។',
+      '*គ្រឿងបុកស្រស់ៗពីធម្មជាតិ៖ ផ្សំពីស្លឹកគ្រៃ រមៀត រំដេង ខ្ទឹមស និងស្លឹកក្រូចសើច ដែលសម្បូរដោយសារធាតុប្រឆាំងអុកស៊ីតកម្ម ជួយសម្រួលការរំលាយអាហារ និងបង្កើនប្រព័ន្ធការពាររាងកាយ។',
+      '*រសជាតិឆ្ងាញ់ អនាម័យខ្ពស់៖ ជូរអែមមុតស្រាលស្រទន់ ក្រអូបឈ្ងុយគ្រឿងបុកខ្មែរ ចម្អិនថ្មីៗក្តៅៗតាមស្តង់ដារអនាម័យត្រឹមត្រូវ គ្មានបារម្ភរឿងសុខភាព។'
     ],
     image: '1.jpg',
     likes: 388,
     isLiked: false,
     shares: 85,
-    timeStr: 'ទើបតែបង្ហោះ (មុខម្ហូបពិសេសប្រចាំថ្ងៃ 🔥)',
+    timeStr: 'ទើបតែបង្ហោះ (ម្ហូបពិសេសប្រចាំថ្ងៃ 🔥)',
     comments: [
       { author: 'ចិន្តា សុខ', text: 'ម្ជូរគ្រឿងសាច់គោនេះឆ្ងាញ់ខ្លាំងណាស់ សាច់ផុយទន់ចូលជាតិល្អ គ្រឿងបុកឈ្ងុយសាយភាយ!' },
       { author: 'វីរៈ បុត្រ', text: 'រសជាតិជូរអែមមុតស្រាលស្រទន់ អនាម័យខ្ពស់ ញ៉ាំជាមួយបាយក្តៅៗត្រូវគ្នាខ្លាំង!' }
+    ]
+  },
+  {
+    id: 'food_ginger_chicken',
+    type: 'food',
+    title: 'ឆាខ្ញីសាច់មាន់ពិសេស — រសជាតិដើមដ៏ឈ្ងុយឆ្ងាញ់ ចម្អិនថ្មីៗក្តៅៗផ្ដល់ទាំងផាសុខភាព និងទំនុកចិត្តខ្ពស់',
+    category: 'fried',
+    categories: ['fried', 'healthy'],
+    priceUsd: 1.25,
+    priceKhr: 5000,
+    calories: 295,
+    desc: 'ឆាខ្ញីសាច់មាន់ពិសេស រសជាតិដើមដ៏ឈ្ងុយឆ្ងាញ់ ចម្អិនថ្មីៗក្តៅៗផ្ដល់ទាំងផាសុខភាព និងទំនុកចិត្តខ្ពស់ប្រចាំ «ផ្ទះម៉ាក់រចនា»។',
+    features: [
+      '*សាច់មាន់ស្រស់គ្មានក្លិនឆ្អាប៖ ជ្រើសរើសសាច់មាន់ស្រស់ស្អាត គ្មានជាតិខ្លាញ់កក ផ្ដល់ប្រូតេអ៊ីនខ្ពស់ និងថាមពលល្អដល់រាងកាយ។',
+      '*ខ្ញីស្រស់ជំនួយសុខភាព៖ ខ្ញីខ្ចីហាន់ជាសរសៃស្រស់ៗ មានគុណប្រយោជន៍ជួយកម្តៅរាងកាយ សម្រួលការរំលាយអាហារ បញ្ចុះជាតិហ្គាស និងជំរុញចរន្តឈាមរត់បានល្អ។',
+      '*ចម្អិនអនាម័យ រសជាតិមុតល្មម៖ ឆាក្តៅៗជាមួយនិងគ្រឿងផ្សំធម្មជាតិ កាត់បន្ថយជាតិខ្លាញ់ រសជាតិផ្អែមប្រៃល្មម ញ៉ាំហើយស្រួលខ្លួន គ្មានការព្រួយបារម្ភ។'
+    ],
+    image: '2.jpg',
+    likes: 412,
+    isLiked: false,
+    shares: 92,
+    timeStr: 'ទើបតែបង្ហោះ (ម្ហូបពិសេសប្រចាំថ្ងៃ 🔥)',
+    comments: [
+      { author: 'សុជាតា រ័ត្ន', text: 'ឆាខ្ញីសាច់មាន់ឈ្ងុយខ្ញីខ្ចីខ្លាំងណាស់ ញ៉ាំហើយស្រួលខ្លួន គ្មានខ្លាញ់កកទេ!' },
+      { author: 'ម៉ៅ វុទ្ធី', text: 'សាច់មាន់ស្រស់ទន់ល្អ រសជាតិល្មមឆ្ងាញ់ពិតៗ!' }
+    ]
+  },
+  {
+    id: 'food_pork_egg_stew',
+    type: 'food',
+    title: 'ខសាច់ជ្រូកពងទាពិសេស — រសជាតិដើមឈ្ងុយឆ្ងាញ ចម្អិនរម្ងាស់យ៉ាងយកចិត្តទុកដាក់ ផ្តល់ទាំងឱជារស និងទំនុកចិត្តខ្ពស់',
+    category: 'soup',
+    categories: ['soup', 'healthy'],
+    priceUsd: 1.25,
+    priceKhr: 5000,
+    calories: 340,
+    desc: 'ខសាច់ជ្រូកពងទាពិសេស រសជាតិដើមឈ្ងុយឆ្ងាញ ចម្អិនរម្ងាស់យ៉ាងយកចិត្តទុកដាក់ ផ្តល់ទាំងឱជារស និងទំនុកចិត្តខ្ពស់ប្រចាំ «ផ្ទះម៉ាក់រចនា»។',
+    features: [
+      '*សាច់ជ្រូកស្រស់គុណភាពល្អ៖ ជ្រើសរើសសាច់ជ្រូកស្រស់ៗ សម្អាតយ៉ាងផ្ចិតផ្ចង់ រម្ងាស់រហូតផុយទន់ល្មម ចូលជាតិសព្វសាច់ គ្មានក្លិនឆ្អាប។',
+      '*ពងទាពោរពេញដោយជីវជាតិ៖ ពងទាស្ងោរ ដាក់ក្នុងទឹកខប្រែផ្អែមពណ៌ត្នោតក្រមៅធម្មជាតិ ផ្តល់ប្រូតេអ៊ីនពេញលេញ និងជួយទ្រទ្រង់កម្លាំងបានយ៉ាងល្អ។',
+      '*រសជាតិដិតដល់ អនាម័យខ្ពស់៖ ទឹកខមានរសជាតិប្រៃផ្អែមស្រទន់ ក្រអូបឈ្ងុយស្ករត្នោត និងគ្រឿងទេសធម្មជាតិ ចម្អិនថ្មីៗក្តៅៗតាមស្តង់ដារអនាម័យ ញ៉ាំដោយក្តីកក់ក្តៅ និងមានសុវត្ថិភាព។'
+    ],
+    image: '3.jpg',
+    likes: 365,
+    isLiked: false,
+    shares: 74,
+    timeStr: 'ទើបតែបង្ហោះ (ម្ហូបពិសេសប្រចាំថ្ងៃ 🔥)',
+    comments: [
+      { author: 'លីលី ហេង', text: 'ខសាច់ជ្រូកពងទាចូលជាតិល្អខ្លាំងណាស់ ទឹកខផ្អែមប្រៃស្រទន់ស្ករត្នោតឆ្ងាញ់ដូចស្នាដៃម៉ាក់ធ្វើ!' },
+      { author: 'គឹម សាន', text: 'ពងទាជ្រាបចូលជាតិសព្វ សាច់ជ្រូកផុយទន់ឆ្ងាញ់ណាស់!' }
+    ]
+  },
+  {
+    id: 'food_korko_special',
+    type: 'food',
+    title: 'សម្លកកូរខ្មែរពិសេស — កំពូលសម្លបុរាណប្រចាំជាតិ ប្រមូលផ្តុំដោយបន្លែធម្មជាតិ និងជីវជាតិយ៉ាងបរិបូរណ៍',
+    category: 'healthy',
+    categories: ['healthy', 'soup'],
+    priceUsd: 1.25,
+    priceKhr: 5000,
+    calories: 280,
+    desc: 'សម្លកកូរខ្មែរពិសេស កំពូលសម្លបុរាណប្រចាំជាតិ ប្រមូលផ្តុំដោយបន្លែធម្មជាតិ និងជីវជាតិយ៉ាងបរិបូរណ៍ប្រចាំ «ផ្ទះម៉ាក់រចនា»។',
+    features: [
+      '*បន្លែចម្រុះស្រស់ៗពីធម្មជាតិ៖ ផ្សំពីបន្លែធម្មជាតិសម្បូរបែប ផ្តល់ជាតិសរសៃខ្ពស់ ជួយសម្រួលការបន្ទោរបង់ និងលាងសម្អាតជាតិពុលក្នុងពោះវៀន។',
+      '*គ្រឿងបុក និងអង្ករលីងឈ្ងុយពិសេស៖ ឈ្ងុយឈ្ងប់ដោយសារធាតុគ្រឿងបុកខ្មែរ រួមជាមួយអង្ករលីងក្រអូប និងប្រហុកសាច់យ៉ាងស្អាត គ្មានក្លិនឆ្អាប ជួយជំរុញចំណង់អាហារ និងកម្តៅសរីរាង្គ។',
+      '*សាច់ស្រស់ចម្អិនតាមស្តង់ដារអនាម័យ៖ ប្រើប្រាស់សាច់ស្រស់ៗស្អាតល្អ រម្ងាស់ជាមួយទឹកស៊ុបខាប់ល្មម រសជាតិមុតជាប់មាត់ ធានាទាំងអនាម័យ ទំនុកចិត្ត និងសុខភាពរឹងមាំ។'
+    ],
+    image: '4.jpg',
+    likes: 450,
+    isLiked: false,
+    shares: 110,
+    timeStr: 'ទើបតែបង្ហោះ (ម្ហូបពិសេសប្រចាំថ្ងៃ 🔥)',
+    comments: [
+      { author: 'សុខា ស្រីពៅ', text: 'សម្លកកូរនេះបន្លែស្រស់ៗច្រើនមុខណាស់ គ្រឿងបុកនិងអង្ករលីងឈ្ងុយសាយភាយ ញ៉ាំហើយសុខភាពល្អ!' },
+      { author: 'ចាន់ ណារ៉ា', text: 'រសជាតិដើមពិតៗ ទឹកស៊ុបខាប់ឈ្ងុយឆ្ងាញ់ជាប់មាត់!' }
     ]
   },
   {
@@ -204,6 +279,46 @@ const INITIAL_POSTS = [
     shares: 39,
     timeStr: '៨ ម៉ោងមុន',
     comments: []
+  },
+  {
+    id: 'post_news_1',
+    type: 'news',
+    title: 'ការលើកកម្ពស់សន្តិសុខស្បៀង និងការនាំចេញមុខម្ហូបប្រពៃណីខ្មែរទៅកាន់ទីផ្សារអន្តរជាតិ',
+    source: 'RFI ខេមរភាសា',
+    category: 'rfi',
+    desc: 'រាជរដ្ឋាភិបាលកម្ពុជា និងក្រសួងពាណិជ្ជកម្ម បានដាក់ចេញយុទ្ធសាស្ត្រថ្មី ដើម្បីជំរុញការចុះបញ្ជីម៉ាកសម្គាល់ភូមិសាស្ត្រទំនិញម្ហូបខ្មែរ និងគាំទ្រដល់អាជីវកម្មម្ហូបអាហារក្នុងស្រុក។',
+    image: 'earth_globe.jpg',
+    timeStr: '១ ម៉ោងមុន',
+    likes: 156,
+    isLiked: false,
+    shares: 34,
+    comments: []
+  },
+  {
+    id: 'post_health_1',
+    type: 'health',
+    title: 'គន្លឹះកាត់បន្ថយជាតិប្រៃ (អំបិល) និងជាតិស្ករក្នុងរបបអាហារប្រចាំថ្ងៃ',
+    source: 'ក្រសួងសុខាភិបាល (MoH)',
+    desc: 'ការកាត់បន្ថយការញ៉ាំប្រៃ និងផ្អែម ជួយកាត់បន្ថយហានិភ័យនៃជំងឺលើសសម្ពាធឈាម និងជំងឺទឹកនោមផ្អែមរហូតដល់ទៅ ៥០%។ ណែនាំឱ្យប្រើប្រាស់គ្រឿងទេសធម្មជាតិជំនួសវិញ។',
+    image: 'food_korko.jpg',
+    timeStr: '៣ ម៉ោងមុន',
+    likes: 210,
+    isLiked: false,
+    shares: 48,
+    comments: []
+  },
+  {
+    id: 'post_sports_1',
+    type: 'sports',
+    title: 'លំហាត់ប្រាណកម្តៅសាច់ដុំតាមផ្ទះ ១៥ នាទីរាល់ព្រឹកដើម្បីសុខភាពមាំមួន',
+    source: 'កីឡាដើម្បីសុខភាព',
+    desc: 'លំហាត់ប្រាណសាមញ្ញៗដែលមិនត្រូវការឧបករណ៍ ជួយដាស់រាងកាយឱ្យស្វាហាប់ និងបង្កើនល្បឿននៃការដុតបំផ្លាញថាមពលកាឡូរីប្រចាំថ្ងៃ។',
+    image: 'food_amok.jpg',
+    timeStr: '៥ ម៉ោងមុន',
+    likes: 180,
+    isLiked: false,
+    shares: 29,
+    comments: []
   }
 ];
 
@@ -318,16 +433,19 @@ function initApp() {
   if (savedPosts) {
     try {
       AppState.posts = JSON.parse(savedPosts);
-      // Ensure the newly requested dish 'food_beef_sour_soup' (1.jpg) is present at the beginning
-      const beefDish = INITIAL_POSTS.find(p => p.id === 'food_beef_sour_soup');
-      const existingIdx = AppState.posts.findIndex(p => p.id === 'food_beef_sour_soup' || p.image === '1.jpg');
-      if (existingIdx === -1 && beefDish) {
-        AppState.posts.unshift(beefDish);
-        savePosts();
-      } else if (existingIdx !== -1 && beefDish) {
-        AppState.posts[existingIdx] = { ...AppState.posts[existingIdx], ...beefDish };
-        savePosts();
+      // Ensure all 4 signature dishes (1.jpg, 2.jpg, 3.jpg, 4.jpg) are present at the beginning
+      const signatureIds = ['food_korko_special', 'food_pork_egg_stew', 'food_ginger_chicken', 'food_beef_sour_soup'];
+      for (const sigId of signatureIds) {
+        const dish = INITIAL_POSTS.find(p => p.id === sigId);
+        if (dish) {
+          const idx = AppState.posts.findIndex(p => p.id === sigId || p.image === dish.image);
+          if (idx !== -1) {
+            AppState.posts.splice(idx, 1);
+          }
+          AppState.posts.unshift(dish);
+        }
       }
+      savePosts();
     } catch (e) {
       AppState.posts = INITIAL_POSTS;
       savePosts();
@@ -435,12 +553,13 @@ function setupNavigation() {
     });
   }
 
-  // Hero Jump Buttons
-  document.querySelectorAll('[data-page-jump]').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const page = btn.getAttribute('data-page-jump');
-      switchPage(page);
-    });
+  // Delegated Page Jump Buttons
+  document.addEventListener('click', (e) => {
+    const jumpBtn = e.target.closest('[data-page-jump]');
+    if (jumpBtn) {
+      const page = jumpBtn.getAttribute('data-page-jump');
+      if (page) switchPage(page);
+    }
   });
 
   // Feed Filter Tags
@@ -483,23 +602,89 @@ function setupNavigation() {
   }
 }
 
-// 8. Render Post Card Template (ដូច Facebook: ឆ្វេង ចូលចិត្ត/មតិ/ចែករំលែក | ស្តាំ Telegram & Messenger)
+// 8. Render Post Card Template (ដូច Facebook: ឆ្វេង ចូលចិត្ត/មតិ/ចែករំលែក | ស្តាំ Telegram & Messenger ឬ ប៊ូតុងតំណភ្ជាប់)
 function buildPostCardHtml(post) {
   const isFood = post.type === 'food';
-  const priceDisplay = `$${post.priceUsd.toFixed(2)} (${toKhmerNumber(post.priceKhr.toLocaleString())} ៛)`;
-  const calorieBadge = post.calories > 0
-    ? `<span class="post-calorie-badge">🔥 ${toKhmerNumber(post.calories)} kcal</span>`
-    : '';
+  const isBeauty = post.type === 'beauty';
+  const isNews = post.type === 'news';
+  const isHealth = post.type === 'health';
+  const isSports = post.type === 'sports';
 
-  // Pre-fill Telegram and Messenger order links
-  const orderMsg = encodeURIComponent(
-    `សួស្តី «ផ្ទះម៉ាក់រចនា»! ខ្ញុំចង់កុម្ម៉ង់៖
+  // Category Pill Label and Class
+  let catPillClass = 'food';
+  let catPillText = '🍲 មុខម្ហូប';
+  let targetPage = 'pageFood';
+
+  if (isBeauty) {
+    catPillClass = 'beauty';
+    catPillText = '✨ ផលិតផលសម្រស់';
+    targetPage = 'pageBeauty';
+  } else if (isNews) {
+    catPillClass = 'news';
+    catPillText = '🌐 ព័ត៌មាន';
+    targetPage = 'pageNews';
+  } else if (isHealth) {
+    catPillClass = 'health';
+    catPillText = '🩺 សុខភាព';
+    targetPage = 'pageHealth';
+  } else if (isSports) {
+    catPillClass = 'sports';
+    catPillText = '🏃‍♂️ កីឡា';
+    targetPage = 'pageSports';
+  }
+
+  // Price & Calorie / Source Badge
+  let badgesHtml = '';
+  let rightActionHtml = '';
+
+  if (post.priceUsd && post.priceUsd > 0) {
+    const priceDisplay = `${toKhmerNumber(post.priceKhr ? post.priceKhr.toLocaleString() : Math.round(post.priceUsd * AppState.khrRate).toLocaleString())} ៛ ($${post.priceUsd.toFixed(2)})`;
+    const calorieBadge = post.calories > 0
+      ? `<span class="post-calorie-badge">🔥 ${toKhmerNumber(post.calories)} kcal</span>`
+      : '';
+    badgesHtml = `
+      <div class="post-badges-row">
+        <span class="post-price-badge">💵 ${priceDisplay}</span>
+        ${calorieBadge}
+      </div>
+    `;
+
+    // Order Links for Food & Beauty
+    const orderMsg = encodeURIComponent(
+      `សួស្តី «ផ្ទះម៉ាក់រចនា»! ខ្ញុំចង់កុម្ម៉ង់៖
 - មុខទំនិញ៖ ${post.title}
-- តម្លៃ៖ $${post.priceUsd.toFixed(2)} (${post.priceKhr.toLocaleString()} ៛)
+- តម្លៃ៖ $${post.priceUsd.toFixed(2)} (${(post.priceKhr || Math.round(post.priceUsd * AppState.khrRate)).toLocaleString()} ៛)
 សូមជួយទាក់ទងមកខ្ញុំបាទ/នាងខ្ញុំផង។ អរគុណ!`
-  );
-  const telegramUrl = `https://t.me/MakRachanaKitchen?text=${orderMsg}`;
-  const messengerUrl = `https://m.me/MakRachanaKitchen?text=${orderMsg}`;
+    );
+    const telegramUrl = `https://t.me/MakRachanaKitchen?text=${orderMsg}`;
+    const messengerUrl = `https://m.me/MakRachanaKitchen?text=${orderMsg}`;
+
+    rightActionHtml = `
+      <div class="post-right-order-group">
+        <a href="${telegramUrl}" target="_blank" rel="noopener" class="btn-order-direct telegram" title="Order ផ្ទាល់តាម Telegram">
+          <span>✈️</span> Telegram
+        </a>
+        <a href="${messengerUrl}" target="_blank" rel="noopener" class="btn-order-direct messenger" title="Order ផ្ទាល់តាម Messenger">
+          <span>💬</span> Messenger
+        </a>
+      </div>
+    `;
+  } else {
+    // Non-commerce (News, Health, Sports)
+    const sourceLabel = post.source || catPillText;
+    badgesHtml = `
+      <div class="post-badges-row">
+        <span class="post-source-badge">📌 ប្រភព៖ ${sourceLabel}</span>
+      </div>
+    `;
+    rightActionHtml = `
+      <div class="post-right-order-group">
+        <button type="button" class="btn-order-direct primary-link" data-page-jump="${targetPage}" title="ចូលមើលទំព័រ ${catPillText}">
+          <span>🔍</span> មើលក្នុងទំព័រ ${catPillText}
+        </button>
+      </div>
+    `;
+  }
 
   // Bullet points / Features Highlights
   let featuresHtml = '';
@@ -530,6 +715,13 @@ function buildPostCardHtml(post) {
     `;
   }
 
+  // Image wrap
+  const imageHtml = post.image ? `
+    <div class="post-photo-wrap">
+      <img src="${post.image}" alt="${post.title}" class="post-photo-img" loading="lazy">
+    </div>
+  ` : '';
+
   return `
     <article class="post-card" id="post-${post.id}">
       
@@ -549,8 +741,8 @@ function buildPostCardHtml(post) {
         </div>
 
         <div class="post-header-right">
-          <span class="post-category-pill ${isFood ? 'food' : 'beauty'}">
-            ${isFood ? '🍲 មុខម្ហូបខ្មែរ' : '✨ ផលិតផលសម្រស់'}
+          <span class="post-category-pill ${catPillClass}">
+            ${catPillText}
           </span>
           <button type="button" class="btn-post-more" data-post-more="${post.id}" title="ជម្រើសបន្ថែម">
             <span>•••</span>
@@ -563,23 +755,16 @@ function buildPostCardHtml(post) {
       <p class="post-desc-text">${post.desc}</p>
       ${featuresHtml}
 
-      <div class="post-badges-row">
-        <span class="post-price-badge">💵 ${priceDisplay}</span>
-        ${calorieBadge}
-      </div>
-
-      <!-- Post Image (ស៊ុម មានគែម ព័ទ្ធជុំវិញ ស្អាតបាត) -->
-      <div class="post-photo-wrap">
-        <img src="${post.image}" alt="${post.title}" class="post-photo-img" loading="lazy">
-      </div>
+      ${badgesHtml}
+      ${imageHtml}
 
       <!-- Reaction Stats -->
       <div class="post-reactions-row">
-        <span>👍 <strong id="likeCount-${post.id}">${toKhmerNumber(post.likes)}</strong> នាក់បានចូលចិត្ត</span>
-        <span>${toKhmerNumber(post.comments.length)} មតិ • ${toKhmerNumber(post.shares)} ចែករំលែក</span>
+        <span>👍 <strong id="likeCount-${post.id}">${toKhmerNumber(post.likes || 0)}</strong> នាក់បានចូលចិត្ត</span>
+        <span>${toKhmerNumber(post.comments ? post.comments.length : 0)} មតិ • ${toKhmerNumber(post.shares || 0)} ចែករំលែក</span>
       </div>
 
-      <!-- Action Bar Split (Left: 3 Action Buttons គ្មានអក្សរ | Right: Direct Order) -->
+      <!-- Action Bar Split (Left: 3 Action Buttons គ្មានអក្សរ | Right: Direct Order or Link) -->
       <div class="post-action-bar-split">
         
         <!-- Left: Like, Comment, Share (គ្មានអក្សរបញ្ជាក់ Button ទាំង៣ទេ តាមសំណើ) -->
@@ -595,31 +780,8 @@ function buildPostCardHtml(post) {
           </button>
         </div>
 
-        <!-- Right: Direct Order via Telegram & Messenger -->
-        <div class="post-right-order-group">
-          <a href="${telegramUrl}" target="_blank" rel="noopener" class="btn-order-direct telegram" title="Order ផ្ទាល់តាម Telegram">
-            <span>✈️</span> Telegram
-          </a>
-          <a href="${messengerUrl}" target="_blank" rel="noopener" class="btn-order-direct messenger" title="Order ផ្ទាល់តាម Messenger">
-            <span>💬</span> Messenger
-          </a>
-        </div>
-
-      </div>
-
-    </article>
-  `;
-}
-
-        <!-- Right: Direct Order via Telegram & Messenger -->
-        <div class="post-right-order-group">
-          <a href="${telegramUrl}" target="_blank" rel="noopener" class="btn-order-direct telegram" title="Order ផ្ទាល់តាម Telegram">
-            <span>✈️</span> Telegram
-          </a>
-          <a href="${messengerUrl}" target="_blank" rel="noopener" class="btn-order-direct messenger" title="Order ផ្ទាល់តាម Messenger">
-            <span>💬</span> Messenger
-          </a>
-        </div>
+        <!-- Right: Direct Order via Telegram & Messenger OR Page Link -->
+        ${rightActionHtml}
 
       </div>
 
@@ -672,15 +834,25 @@ function renderNewsGrid(cat = 'all') {
   const container = document.getElementById('newsArticlesContainer');
   if (!container) return;
 
-  const articles = NEWS_ARTICLES.filter((a) => {
+  const dynamicNews = AppState.posts.filter((p) => p.type === 'news').map((p) => ({
+    source: p.source || 'Admin ផ្ទះម៉ាក់រចនា',
+    icon: '📢',
+    title: p.title,
+    summary: p.desc,
+    time: p.timeStr || 'ថ្មីៗ',
+    category: 'all',
+  }));
+
+  const allNews = [...dynamicNews, ...NEWS_ARTICLES];
+  const articles = allNews.filter((a) => {
     if (cat === 'all') return true;
-    return a.category === cat;
+    return a.category === cat || a.category === 'all';
   });
 
   container.innerHTML = articles.map((art) => `
     <div class="news-article-card">
       <div class="news-source-tag">
-        <span>${art.icon}</span> ${art.source}
+        <span>${art.icon || '🌐'}</span> ${art.source}
       </div>
       <h3 class="news-title">${art.title}</h3>
       <p class="news-summary">${art.summary}</p>
@@ -696,7 +868,15 @@ function renderHealthGrid() {
   const container = document.getElementById('healthArticlesContainer');
   if (!container) return;
 
-  container.innerHTML = HEALTH_ARTICLES.map((item) => `
+  const dynamicHealth = AppState.posts.filter((p) => p.type === 'health').map((p) => ({
+    badge: 'ព័ត៌មានសុខភាពថ្មី',
+    title: p.title,
+    desc: p.desc,
+    points: ['អត្ថប្រយោជន៍ល្អចំពោះសុខភាពទូទៅ', 'អនាម័យខ្ពស់ និងសុវត្ថិភាពចំណីអាហារ']
+  }));
+
+  const allHealth = [...dynamicHealth, ...HEALTH_ARTICLES];
+  container.innerHTML = allHealth.map((item) => `
     <div class="health-card">
       <span class="health-badge-moh">${item.badge}</span>
       <h3 class="health-card-title">${item.title}</h3>
@@ -712,7 +892,15 @@ function renderSportsGrid() {
   const container = document.getElementById('sportsCardsContainer');
   if (!container) return;
 
-  container.innerHTML = SPORTS_CARDS.map((item) => `
+  const dynamicSports = AppState.posts.filter((p) => p.type === 'sports').map((p) => ({
+    tag: 'កីឡាដើម្បីសុខភាព',
+    title: p.title,
+    desc: p.desc,
+    steps: p.desc
+  }));
+
+  const allSports = [...dynamicSports, ...SPORTS_CARDS];
+  container.innerHTML = allSports.map((item) => `
     <div class="sports-card">
       <span class="sports-tag">${item.tag}</span>
       <h3 class="sports-title">${item.title}</h3>
@@ -862,18 +1050,35 @@ function renderCommentsDrawerList(post) {
 function setupAdminPostFlow() {
   const modal = document.getElementById('modalAdminPost');
   const btnOpen = document.getElementById('btnOpenAdminPostModal');
+  const btnOpenCard = document.getElementById('btnOpenAdminPostCard');
   const btnClose = document.getElementById('btnCloseAdminPostModal');
   const btnCancel = document.getElementById('btnCancelAdminPost');
   const form = document.getElementById('formAdminPost');
   const inputFile = document.getElementById('adminPostImageFile');
   const previewWrap = document.getElementById('adminPreviewWrap');
   const previewImg = document.getElementById('adminPostPreviewImg');
+  const selectType = document.getElementById('adminPostType');
 
   let currentImageBase64 = null;
 
-  if (btnOpen && modal) {
-    btnOpen.addEventListener('click', () => {
+  const openModal = (defaultType = null) => {
+    if (modal) {
+      if (defaultType && selectType) {
+        selectType.value = defaultType;
+      }
       modal.classList.add('active');
+    }
+  };
+
+  if (btnOpen) {
+    btnOpen.addEventListener('click', () => openModal());
+  }
+
+  if (btnOpenCard) {
+    btnOpenCard.addEventListener('click', (e) => {
+      const quickBtn = e.target.closest('[data-quick-type]');
+      const type = quickBtn ? quickBtn.getAttribute('data-quick-type') : 'food';
+      openModal(type);
     });
   }
 
@@ -910,27 +1115,35 @@ function setupAdminPostFlow() {
   if (form) {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
-      const type = document.getElementById('adminPostType')?.value || 'food';
+      const type = selectType?.value || 'food';
       const title = document.getElementById('adminPostTitle')?.value.trim() || '';
       const priceUsd = parseFloat(document.getElementById('adminPostPriceUsd')?.value) || 0;
       const calories = parseInt(document.getElementById('adminPostCalorie')?.value, 10) || 0;
       const desc = document.getElementById('adminPostDesc')?.value.trim() || '';
 
-      if (!title || priceUsd <= 0) {
-        showToast('សូមបញ្ចូលឈ្មោះមុខម្ហូប និងតម្លៃឱ្យបានត្រឹមត្រូវ', 'warn');
+      if (!title || !desc) {
+        showToast('សូមបញ្ចូលចំណងជើង និងខ្លឹមសារឱ្យបានត្រឹមត្រូវ', 'warn');
         return;
       }
+
+      const defaultImages = {
+        food: '1.jpg',
+        beauty: 'beauty_natural_soap.jpg',
+        news: 'earth_globe.jpg',
+        health: 'food_korko.jpg',
+        sports: 'food_amok.jpg'
+      };
 
       const newPost = {
         id: 'post_admin_' + Date.now(),
         type: type,
         title: title,
-        category: 'soup',
+        category: type === 'food' ? 'soup' : 'all',
         priceUsd: priceUsd,
         priceKhr: Math.round(priceUsd * AppState.khrRate),
         calories: calories,
         desc: desc,
-        image: currentImageBase64 || (type === 'food' ? 'food_amok.jpg' : 'beauty_natural_soap.jpg'),
+        image: currentImageBase64 || defaultImages[type] || '1.jpg',
         likes: 1,
         isLiked: false,
         shares: 0,
@@ -945,7 +1158,19 @@ function setupAdminPostFlow() {
       renderHomeFeed();
       renderFoodGrid();
       renderBeautyGrid();
-      showToast('🎉 បានបង្ហោះលក់មុខទំនិញថ្មីដោយជោគជ័យ!', 'success');
+      renderNewsGrid();
+      renderHealthGrid();
+      renderSportsGrid();
+
+      const pageNames = {
+        food: '«សូមជ្រើសរើសម្ហូបសម្រាប់ថ្ងៃនេះ»',
+        beauty: '«ផលិតផលសម្រស់ធម្មជាតិ»',
+        news: '«ព័ត៌មាន»',
+        health: '«សុខភាព និង អនាម័យ»',
+        sports: '«កីឡាដើម្បីសុខភាព»'
+      };
+
+      showToast(`🎉 បានបង្ហោះទៅកាន់ទំព័រ ${pageNames[type] || type} និងទំព័រដើមដោយជោគជ័យ!`, 'success');
     });
   }
 }

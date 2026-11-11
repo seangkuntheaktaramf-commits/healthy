@@ -151,16 +151,48 @@
         </div>
       </div>
 
-      <!-- Section Title: Feed Posts from Mak Rachana -->
+      <!-- Section Title: Mixed News & Latest Updates (ព័ត៌មានចម្រុះ និងថ្មីៗបំផុត) -->
       <div class="section-heading-bar">
         <div class="heading-left">
-          <h3><span>📢</span> ការបង្ហោះមុខម្ហូប និងផលិតផលពិសេសៗថ្ងៃនេះ</h3>
-          <p>រាល់មុខម្ហូប និងផលិតផលត្រូវបាន Post ដោយផ្ទាល់ពីម្ចាស់ Page «ផ្ទះម៉ាក់រចនា»</p>
+          <h3><span>📢</span> ព័ត៌មានចម្រុះ និងថ្មីៗបំផុត</h3>
+          <p>ប្រមូលផ្តុំរាល់ការបង្ហោះមុខម្ហូបថ្មីៗ ផលិតផលសម្រស់ ព័ត៌មានទាន់ហេតុការណ៍ សុខភាព និងកីឡាប្រចាំថ្ងៃ</p>
         </div>
         <div class="heading-right">
-          <span class="feed-filter-tag active" data-feed-filter="all">ទាំងអស់</span>
-          <span class="feed-filter-tag" data-feed-filter="food">មុខម្ហូប</span>
-          <span class="feed-filter-tag" data-feed-filter="beauty">សម្រស់</span>
+          <span class="feed-filter-tag active" data-feed-filter="all">🌐 ទាំងអស់ (ចម្រុះ)</span>
+          <span class="feed-filter-tag" data-feed-filter="food">🍲 មុខម្ហូប</span>
+          <span class="feed-filter-tag" data-feed-filter="beauty">✨ សម្រស់</span>
+          <span class="feed-filter-tag" data-feed-filter="news">📰 ព័ត៌មាន</span>
+          <span class="feed-filter-tag" data-feed-filter="health">🩺 សុខភាព</span>
+          <span class="feed-filter-tag" data-feed-filter="sports">🏃‍♂️ កីឡា</span>
+        </div>
+      </div>
+
+      <!-- Admin Quick Post Creator Bar (Facebook-style Post Creator) -->
+      <div class="feed-create-post-card" id="btnOpenAdminPostCard">
+        <div class="create-post-top-row">
+          <div class="create-post-avatar">
+            <img src="mak_rachana_logo.jpg" alt="Admin ផ្ទះម៉ាក់រចនា">
+          </div>
+          <div class="create-post-input-fake">
+            <span>តើលោកអ្នកចង់បង្ហោះមុខម្ហូប ផលិតផល ឬព័ត៌មានអ្វីថ្មីថ្ងៃនេះ? (Admin Post)...</span>
+          </div>
+        </div>
+        <div class="create-post-actions-row">
+          <button type="button" class="btn-create-act" data-quick-type="food">
+            <span>🍲</span> <span>មុខម្ហូប</span>
+          </button>
+          <button type="button" class="btn-create-act" data-quick-type="beauty">
+            <span>✨</span> <span>សម្រស់</span>
+          </button>
+          <button type="button" class="btn-create-act" data-quick-type="news">
+            <span>🌐</span> <span>ព័ត៌មាន</span>
+          </button>
+          <button type="button" class="btn-create-act" data-quick-type="health">
+            <span>🩺</span> <span>សុខភាព</span>
+          </button>
+          <button type="button" class="btn-create-act" data-quick-type="sports">
+            <span>🏃‍♂️</span> <span>កីឡា</span>
+          </button>
         </div>
       </div>
 
@@ -405,22 +437,25 @@
       <form id="formAdminPost">
         <div class="modal-body">
           <div class="input-group">
-            <label for="adminPostType">ប្រភេទការបង្ហោះ</label>
+            <label for="adminPostType">ជ្រើសរើសទំព័រដែលត្រូវបង្ហោះ (Post Destination Page)</label>
             <select id="adminPostType" class="input-control">
-              <option value="food">🍲 មុខម្ហូប (គ្រឿងបរិភោគ)</option>
-              <option value="beauty">✨ ផលិតផលសម្រស់</option>
+              <option value="food">🍲 មុខម្ហូប ➔ ចូលទំព័រ «សូមជ្រើសរើសម្ហូបសម្រាប់ថ្ងៃនេះ»</option>
+              <option value="beauty">✨ ផលិតផលសម្រស់ ➔ ចូលទំព័រ «ផលិតផលសម្រស់ធម្មជាតិ»</option>
+              <option value="news">🌐 ព័ត៌មាន ➔ ចូលទំព័រ «ព័ត៌មាន»</option>
+              <option value="health">🩺 សុខភាព ➔ ចូលទំព័រ «សុខភាព និង អនាម័យ»</option>
+              <option value="sports">🏃‍♂️ កីឡា ➔ ចូលទំព័រ «កីឡាដើម្បីសុខភាព»</option>
             </select>
           </div>
 
           <div class="input-group">
-            <label for="adminPostTitle">ឈ្មោះមុខម្ហូប / ផលិតផល</label>
-            <input type="text" id="adminPostTitle" class="input-control" placeholder="ឧ. អាម៉ុកត្រីរសជាតិដើម" required>
+            <label for="adminPostTitle">ចំណងជើង / ឈ្មោះមុខម្ហូប / ព័ត៌មាន</label>
+            <input type="text" id="adminPostTitle" class="input-control" placeholder="ឧ. ម្ជូរគ្រឿងសាច់ រសជាតិដើម" required>
           </div>
 
-          <div class="input-row-2">
+          <div class="input-row-2" id="adminPriceRow">
             <div class="input-group">
-              <label for="adminPostPriceUsd">តម្លៃជាដុល្លារ ($)</label>
-              <input type="number" step="0.1" id="adminPostPriceUsd" class="input-control" placeholder="ឧ. 5.5" required>
+              <label for="adminPostPriceUsd">តម្លៃជាដុល្លារ ($) (សម្រាប់ម្ហូប & សម្រស់)</label>
+              <input type="number" step="0.1" id="adminPostPriceUsd" class="input-control" placeholder="ឧ. 5.5">
             </div>
             <div class="input-group">
               <label for="adminPostCalorie">កាឡូរី (kcal)</label>
